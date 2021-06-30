@@ -1,5 +1,7 @@
 Popis a zadání projektu je dostupné v souboru "ifj2020.pdf".
 
+Aplikace se po překladu příkazem "make" spouští z příkazové řádky.
+
 Autoři:
 Šulavík Jan (vedoucí)
 Polonec Michal
