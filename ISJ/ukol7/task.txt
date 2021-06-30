@@ -1,4 +1,7 @@
-Do souboru, nazvaného podle konvence isj_proj7_xnovak00.py, implementujte funkci (decorator factory) log_and_count, která umožní použití dekorátoru s určením jména key (klíče ve struktuře Counter), pod kterou má být volání dané funkce započítáno, nebo použije jako klíč následující jméno funkce. Druhým parametrem, který bude muset být zadán s klíčovým jménem counts, bude jméno struktury Counter, do níž má být počítání ukládáno. Mělo by tedy fungovat následující:
+Do souboru, nazvaného podle konvence isj_proj7_xnovak00.py, implementujte funkci (decorator factory) log_and_count, která umožní použití dekorátoru 
+s určením jména key (klíče ve struktuře Counter), pod kterou má být volání dané funkce započítáno, nebo použije jako klíč následující jméno funkce. 
+Druhým parametrem, který bude muset být zadán s klíčovým jménem counts, bude jméno struktury Counter, do níž má být počítání ukládáno.
+Mělo by tedy fungovat následující:
 
 import collections
 
