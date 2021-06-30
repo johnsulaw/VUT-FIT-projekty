@@ -1,0 +1,432 @@
+html {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #f2f2f2;
+	display: grid;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	margin: 0;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.content {
+	display: grid;
+	max-width: 1200px;
+	min-width: 768px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.heading {
+	min-width: 768px;
+	margin: auto;
+	background-color: #3d3d5c;
+	padding: 30px 0 30px 0;
+	width: 100%;
+	border-style: solid none solid none;
+}
+
+#navigation {
+	background-color: #29a3a3;
+	width: 100%;
+	height: 100px;
+}
+
+#navigation .content {
+	display: grid;
+	grid-template-columns: 126px auto auto;
+    grid-template-areas: "profile-picture name menu";
+	min-width: 768px;
+	margin: auto;
+	background-color: #29a3a3;
+	width: 100%;
+	height: 100px;
+}
+
+#profile-picture {
+	float: left;
+	overflow: visible;
+}
+
+#profile-picture a {
+	color: black;
+	overflow: visible;
+}
+
+#profile-picture img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border-style: solid;
+	background-color: #29a3a3;
+	position: absolute;
+	z-index: 6;
+}
+
+#name {
+	height: 100px;
+	float: left;
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+	padding: 25px 0 0 25px;
+	position: relative;;
+}
+
+#name a {
+	text-decoration: none;
+	color: black;
+}
+
+#menu {
+	float: right;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 45px 0 0 200px;
+	padding: 0;
+}
+
+#menu li {
+	float: left;
+	text-align: center;
+	padding-left: 25px;
+	overflow: hidden;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#menu li a:hover {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/*class that gets used for sticky navbar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 110px;
+  z-index: 9;
+  border-style: none none solid none;
+}
+
+#profile {
+	overflow: hidden;
+	width: 100%;
+}
+
+#body-picture {
+	float: left;
+	max-width: 20%;
+	margin-top: 20px;
+}
+
+#personal-info {
+	overflow: hidden;
+	margin-left: 40px;
+	width: 70%;
+	float: left;
+}
+
+#about .content {
+	grid-template-columns: 20% auto 350px;
+	grid-template-rows: 60% 40%;
+}
+
+#about dl {
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+#about dt {
+	float: left;
+	width: 40%;
+	padding: 3px 0 3px 0;
+	margin: 0;
+	position: relative;
+}
+
+#about dd {
+	float: left;
+	width: 60%;
+	padding: 3px 0 3px 0;
+	margin: 0;
+	position: relative;
+}
+
+#family {
+	overflow: hidden;
+	background-color: #8585ad;
+	padding: 0 20px 0 20px;
+	border-style: none solid none solid;
+	justify-content: center;
+	grid-column: 3;
+	grid-row-start: 1;
+	grid-row-end: -1;
+}
+
+#family h2 {
+	margin-bottom: 40px;
+	width: inherit;
+	color: white;
+	text-align: center;
+}
+
+#family-list {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: grid;
+	justify-content: center;
+}
+
+#family-list li {
+	margin: 0 15px 10px 15px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	list-style-type: none;
+	float: left;
+}
+
+#family-list img {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	border-radius: 50%;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	margin: 10px 0 0 40px;
+}
+
+#family-photos {
+	overflow: hidden;
+	padding-top: 60px;
+}
+
+#skills {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#skills h2 {
+	margin-left: 40px;
+}
+
+#skills-list {
+	list-style: none;
+}
+
+#skills-list li {
+	margin: 10px 0 10px 0;
+}
+
+/* making bullet points tick marks*/
+#skills-list li:before {
+	content: '✓';
+	margin-right: 5px;
+}
+
+#careers p {
+	text-align: center;
+}
+
+#careers .career p {
+	text-align: left;
+}
+
+.career {
+	width: 100%;
+	border-style: solid none none none;
+}
+
+.career h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.career h3 {
+	margin-top: 0px;
+	background-color: #a3a3c2;
+	padding: 0 5px 0 5px;
+	font-weight: 400;
+}
+
+#careers .date {
+	float: right;
+}
+
+.dropdown-button {
+	width: 200px;
+	height: 40px;
+	padding: 10px 10px 10px 10px;
+	background-color: #3d3d5c;
+	color: white;
+	cursor: pointer;
+	border-style: none solid solid solid;
+	border-color: black;
+	text-transform: uppercase;
+}
+
+.arrow {
+  	border: solid white;
+  	border-width: 0 3px 3px 0;
+  	display: inline-block;
+  	padding: 3px;
+  	margin: 0 0 1px 10px;
+  	transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
+}
+
+.dropdown-button:hover {
+	background-color: #8585ad;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin: auto;
+
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 200px;
+	z-index: 1;
+	background-color: #3d3d5c;
+}
+
+.dropdown-content a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 0 10px 5px;
+}
+
+.dropdown-content hr {
+	border: 1px solid black;
+	margin: 0;
+}
+
+.dropdown-content a:hover {
+	background-color: #8585ad;
+}
+
+.show {
+	display: block;
+}
+
+#projects .project {
+	display: grid;
+	grid-template-columns: 340px auto;
+	overflow: hidden;
+	border-style: solid solid solid solid;
+	padding: 0 20px 0 20px;
+	margin: 20px 0 20px 0;
+	background-color: #8585ad;
+}
+
+.project-name {
+	padding-left: 60px;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.project h3 {
+	grid-row: 2;
+	grid-column: 2;
+	margin: 0;
+}
+
+.project p {
+	grid-row: 2;
+	grid-column: 2;
+	margin-top: 30px;
+}
+
+.return {
+	font-size: 12px;
+	grid-row: 1;
+	grid-column: 2;
+	font-weight: bold;
+	text-align: right;
+	margin: 20px 5px 0 0;
+}
+
+.return a {
+	color: white;
+	text-decoration: none;
+}
+
+.return a:hover {
+	color: black;
+}
+
+.project-photo{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.project img {
+	height: 300px;
+	width: 300px;
+	border-radius: 25%;
+	object-fit: cover;
+	border-style: solid;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+#last-heading {
+	text-align: center;
+	padding: 10px 0 10px 0;
+	scroll-behavior: smooth;
+}
+
+#last-heading a {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#footer {
+	background-color: #29a3a3;
+	padding: 0;
+	width: 100%;
+}
+
+#footer .content{
+	height: 40px;
+	color: white;
+	font-size: 12px;
+}
+
+#footer #author {
+	float: right;
+}

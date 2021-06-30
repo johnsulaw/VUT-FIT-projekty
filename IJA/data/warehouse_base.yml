@@ -1,0 +1,4057 @@
+---
+# Warehouse shelves
+shelves:
+- &Shelf1 id: 1
+  storedGoods:
+   name: Table
+   weight: 15
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 100.0
+    coord_y: 100.0
+
+
+- &Shelf2 id: 2
+  storedGoods:
+   name: Chair
+   weight: 5
+  maxCapacity: 2000
+  quantity: 200
+  position:
+    coord_x: 100.0
+    coord_y: 152.0
+
+
+- &Shelf3 id: 3
+  storedGoods:
+   name: Bed
+   weight: 50
+  maxCapacity: 2000
+  quantity: 30
+  position:
+    coord_x: 100.0
+    coord_y: 204.0
+
+- &Shelf4 id: 4
+  storedGoods:
+   name: Sofa
+   weight: 60
+  maxCapacity: 2000
+  quantity: 25
+  position:
+    coord_x: 100.0
+    coord_y: 256.0
+
+- &Shelf5 id: 5
+  storedGoods:
+    name: TV
+    weight: 15
+  maxCapacity: 2000
+  quantity: 130
+  position:
+    coord_x: 100.0
+    coord_y: 308.0
+
+- &Shelf6 id: 6
+  storedGoods:
+    name: Radio
+    weight: 3
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 100.0
+    coord_y: 360.0
+
+- &Shelf7 id: 7
+  storedGoods:
+    name: Stove
+    weight: 150
+  maxCapacity: 2000
+  quantity: 12
+  position:
+    coord_x: 100.0
+    coord_y: 412.0
+
+- &Shelf8 id: 8
+  storedGoods:
+    name: Stove
+    weight: 150
+  maxCapacity: 2000
+  quantity: 10
+  position:
+    coord_x: 100.0
+    coord_y: 464.0
+
+- &Shelf9 id: 9
+  storedGoods:
+    name: Fridge
+    weight: 200
+  maxCapacity: 2000
+  quantity: 10
+  position:
+    coord_x: 100.0
+    coord_y: 516.0
+
+- &Shelf10 id: 10
+  storedGoods:
+    name: Sink
+    weight: 15
+  maxCapacity: 2000
+  quantity: 100
+  position:
+    coord_x: 100.0
+    coord_y: 568.0
+
+- &Shelf11 id: 11
+  storedGoods:
+    name: Toilet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 60
+  position:
+    coord_x: 177.0
+    coord_y: 100.0
+
+- &Shelf12 id: 12
+  storedGoods:
+    name: Bath
+    weight: 60
+  maxCapacity: 2000
+  quantity: 20
+  position:
+    coord_x: 177.0
+    coord_y: 152.0
+
+
+- &Shelf13 id: 13
+  storedGoods:
+    name: Shower
+    weight: 50
+  maxCapacity: 2000
+  quantity: 40
+  position:
+    coord_x: 177.0
+    coord_y: 204.0
+
+- &Shelf14 id: 14
+  storedGoods:
+    name: Wardrobe
+    weight: 20
+  maxCapacity: 2000
+  quantity: 80
+  position:
+    coord_x: 177.0
+    coord_y: 256.0
+
+- &Shelf15 id: 15
+  storedGoods:
+    name: Mirror
+    weight: 4
+  maxCapacity: 2000
+  quantity: 400
+  position:
+    coord_x: 177.0
+    coord_y: 308.0
+
+- &Shelf16 id: 16
+  storedGoods:
+    name: Washing mashine
+    weight: 140
+  maxCapacity: 2000
+  quantity: 10
+  position:
+    coord_x: 177.0
+    coord_y: 360.0
+
+- &Shelf17 id: 17
+  storedGoods:
+    name: Dishwasher
+    weight: 120
+  maxCapacity: 2000
+  quantity: 12
+  position:
+    coord_x: 177.0
+    coord_y: 412.0
+
+- &Shelf18 id: 18
+  storedGoods:
+    name: Screen
+    weight: 5
+  maxCapacity: 2000
+  quantity: 380
+  position:
+    coord_x: 177.0
+    coord_y: 464.0
+
+- &Shelf19 id: 19
+  storedGoods:
+    name: Notebook
+    weight: 1
+  maxCapacity: 2000
+  quantity: 250
+  position:
+    coord_x: 177.0
+    coord_y: 516.0
+
+- &Shelf20 id: 20
+  storedGoods:
+    name: Computer
+    weight: 2
+  maxCapacity: 2000
+  quantity: 100
+  position:
+    coord_x: 177.0
+    coord_y: 568.0
+
+- &Shelf21 id: 21
+  storedGoods:
+    name: Armchair
+    weight: 15
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 272.0
+    coord_y: 100.0
+
+- &Shelf22 id: 22
+  storedGoods:
+    name: Garden chair
+    weight: 5
+  maxCapacity: 2000
+  quantity: 150
+  position:
+    coord_x: 272.0
+    coord_y: 152.0
+
+
+- &Shelf23 id: 23
+  storedGoods:
+    name: Cupboard
+    weight: 10
+  maxCapacity: 2000
+  quantity: 170
+  position:
+    coord_x: 272.0
+    coord_y: 204.0
+
+- &Shelf24 id: 24
+  storedGoods:
+    name: Desk
+    weight: 10
+  maxCapacity: 2000
+  quantity: 180
+  position:
+    coord_x: 272.0
+    coord_y: 256.0
+
+- &Shelf25 id: 25
+  storedGoods:
+    name: Door
+    weight: 8
+  maxCapacity: 2000
+  quantity: 230
+  position:
+    coord_x: 272.0
+    coord_y: 308.0
+
+- &Shelf26 id: 26
+  storedGoods:
+    name: Window
+    weight: 5
+  maxCapacity: 2000
+  quantity: 200
+  position:
+    coord_x: 272.0
+    coord_y: 360.0
+
+- &Shelf27 id: 27
+  storedGoods:
+    name: Microwave
+    weight: 60
+  maxCapacity: 2000
+  quantity: 25
+  position:
+    coord_x: 272.0
+    coord_y: 412.0
+
+- &Shelf28 id: 28
+  storedGoods:
+    name: TV
+    weight: 15
+  maxCapacity: 2000
+  quantity: 118
+  position:
+    coord_x: 272.0
+    coord_y: 464.0
+
+- &Shelf29 id: 29
+  storedGoods:
+    name: Radio
+    weight: 3
+  maxCapacity: 2000
+  quantity: 339
+  position:
+    coord_x: 272.0
+    coord_y: 516.0
+
+- &Shelf30 id: 30
+  storedGoods:
+    name: DVD recorder
+    weight: 2
+  maxCapacity: 2000
+  quantity: 889
+  position:
+    coord_x: 272.0
+    coord_y: 568.0
+
+- &Shelf31 id: 31
+  storedGoods:
+    name: Table
+    weight: 15
+  maxCapacity: 2000
+  quantity: 104
+  position:
+    coord_x: 349.0
+    coord_y: 100.0
+
+- &Shelf32 id: 32
+  storedGoods:
+    name: Drawer
+    weight: 45
+  maxCapacity: 2000
+  quantity: 40
+  position:
+    coord_x: 349.0
+    coord_y: 152.0
+
+- &Shelf33 id: 33
+  storedGoods:
+    name: CD player
+    weight: 2
+  maxCapacity: 2000
+  quantity: 674
+  position:
+    coord_x: 349.0
+    coord_y: 204.0
+
+- &Shelf34 id: 34
+  storedGoods:
+    name: Gate
+    weight: 20
+  maxCapacity: 2000
+  quantity: 93
+  position:
+    coord_x: 349.0
+    coord_y: 256.0
+
+- &Shelf35 id: 35
+  storedGoods:
+    name: Fencepost
+    weight: 3
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 349.0
+    coord_y: 308.0
+
+- &Shelf36 id: 36
+  storedGoods:
+    name: Chair
+    weight: 5
+  maxCapacity: 2000
+  quantity: 333
+  position:
+    coord_x: 349.0
+    coord_y: 360.0
+
+- &Shelf37 id: 37
+  storedGoods:
+    name: Microwave
+    weight: 8
+  maxCapacity: 2000
+  quantity: 211
+  position:
+    coord_x: 349.0
+    coord_y: 412.0
+
+- &Shelf38 id: 38
+  storedGoods:
+    name: Bed
+    weight: 50
+  maxCapacity: 2000
+  quantity: 19
+  position:
+    coord_x: 349.0
+    coord_y: 464.0
+
+- &Shelf39 id: 39
+  storedGoods:
+    name: Scale
+    weight: 3
+  maxCapacity: 2000
+  quantity: 548
+  position:
+    coord_x: 349.0
+    coord_y: 516.0
+
+- &Shelf40 id: 40
+  storedGoods:
+    name: Steel bar
+    weight: 2
+  maxCapacity: 2000
+  quantity: 870
+  position:
+    coord_x: 349.0
+    coord_y: 568.0
+
+- &Shelf41 id: 41
+  storedGoods:
+    name: Sofa
+    weight: 60
+  maxCapacity: 2000
+  quantity: 30
+  position:
+    coord_x: 444.0
+    coord_y: 100.0
+
+- &Shelf42 id: 42
+  storedGoods:
+    name: Door
+    weight: 8
+  maxCapacity: 2000
+  quantity: 248
+  position:
+    coord_x: 444.0
+    coord_y: 152.0
+
+- &Shelf43 id: 43
+  storedGoods:
+    name: Ironing board
+    weight: 5
+  maxCapacity: 2000
+  quantity: 395
+  position:
+    coord_x: 444.0
+    coord_y: 204.0
+
+- &Shelf44 id: 44
+  storedGoods:
+    name: Standing lamp
+    weight: 3
+  maxCapacity: 2000
+  quantity: 580
+  position:
+    coord_x: 444.0
+    coord_y: 256.0
+
+- &Shelf45 id: 45
+  storedGoods:
+    name: Iron
+    weight: 2
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 444.0
+    coord_y: 308.0
+
+- &Shelf46 id: 46
+  storedGoods:
+    name: Car battery
+    weight: 3
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 444.0
+    coord_y: 360.0
+
+- &Shelf47 id: 47
+  storedGoods:
+    name: Bricks
+    weight: 10
+  maxCapacity: 2000
+  quantity: 165
+  position:
+    coord_x: 444.0
+    coord_y: 412.0
+
+- &Shelf48 id: 48
+  storedGoods:
+    name: Wi-Fi router
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1200
+  position:
+    coord_x: 444.0
+    coord_y: 464.0
+
+- &Shelf49 id: 49
+  storedGoods:
+    name: Printer
+    weight: 6
+  maxCapacity: 2000
+  quantity: 310
+  position:
+    coord_x: 444.0
+    coord_y: 516.0
+
+- &Shelf50 id: 50
+  storedGoods:
+    name: Treadmill
+    weight: 110
+  maxCapacity: 2000
+  quantity: 17
+  position:
+    coord_x: 444.0
+    coord_y: 568.0
+
+- &Shelf51 id: 51
+  storedGoods:
+    name: Carpet
+    weight: 3
+  maxCapacity: 2000
+  quantity: 500
+  position:
+    coord_x: 521.0
+    coord_y: 100.0
+
+- &Shelf52 id: 52
+  storedGoods:
+    name: Tire
+    weight: 5
+  maxCapacity: 2000
+  quantity: 332
+  position:
+    coord_x: 521.0
+    coord_y: 152.0
+
+- &Shelf53 id: 53
+  storedGoods:
+    name: DVD recorder
+    weight: 2
+  maxCapacity: 2000
+  quantity: 180
+  position:
+    coord_x: 521.0
+    coord_y: 204.0
+
+- &Shelf54 id: 54
+  storedGoods:
+    name: Sink
+    weight: 25
+  maxCapacity: 2000
+  quantity: 77
+  position:
+    coord_x: 521.0
+    coord_y: 256.0
+
+- &Shelf55 id: 55
+  storedGoods:
+    name: Flowerpot
+    weight: 2
+  maxCapacity: 2000
+  quantity: 940
+  position:
+    coord_x: 521.0
+    coord_y: 308.0
+
+- &Shelf56 id: 56
+  storedGoods:
+    name: Bed
+    weight: 50
+  maxCapacity: 2000
+  quantity: 33
+  position:
+    coord_x: 521.0
+    coord_y: 360.0
+
+- &Shelf57 id: 57
+  storedGoods:
+    name: Toilet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 3
+  position:
+    coord_x: 521.0
+    coord_y: 412.0
+
+- &Shelf58 id: 58
+  storedGoods:
+    name: Chair
+    weight: 5
+  maxCapacity: 2000
+  quantity: 250
+  position:
+    coord_x: 521.0
+    coord_y: 464.0
+
+- &Shelf59 id: 59
+  storedGoods:
+    name: Washing mashine
+    weight: 140
+  maxCapacity: 2000
+  quantity: 12
+  position:
+    coord_x: 521.0
+    coord_y: 516.0
+
+- &Shelf60 id: 60
+  storedGoods:
+    name: Desk
+    weight: 10
+  maxCapacity: 2000
+  quantity: 185
+  position:
+    coord_x: 521.0
+    coord_y: 568.0
+
+- &Shelf61 id: 61
+  storedGoods:
+    name: Radiator
+    weight: 50
+  maxCapacity: 2000
+  quantity: 37
+  position:
+    coord_x: 616.0
+    coord_y: 100.0
+
+- &Shelf62 id: 62
+  storedGoods:
+    name: Bunkbed
+    weight: 45
+  maxCapacity: 2000
+  quantity: 5
+  position:
+    coord_x: 616.0
+    coord_y: 152.0
+
+- &Shelf63 id: 63
+  storedGoods:
+    name: Mirror
+    weight: 4
+  maxCapacity: 2000
+  quantity: 480
+  position:
+    coord_x: 616.0
+    coord_y: 204.0
+
+- &Shelf64 id: 64
+  storedGoods:
+    name: Light
+    weight: 3
+  maxCapacity: 2000
+  quantity: 630
+  position:
+    coord_x: 616.0
+    coord_y: 256.0
+
+- &Shelf65 id: 65
+  storedGoods:
+    name: Fencepost
+    weight: 3
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 616.0
+    coord_y: 308.0
+
+- &Shelf66 id: 66
+  storedGoods:
+    name: Radio
+    weight: 3
+  maxCapacity: 2000
+  quantity: 548
+  position:
+    coord_x: 616.0
+    coord_y: 360.0
+
+- &Shelf67 id: 67
+  storedGoods:
+    name: TV
+    weight: 15
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 616.0
+    coord_y: 412.0
+
+- &Shelf68 id: 68
+  storedGoods:
+    name: Wi-Fi router
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1550
+  position:
+    coord_x: 616.0
+    coord_y: 464.0
+
+- &Shelf69 id: 69
+  storedGoods:
+    name: Iron
+    weight: 2
+  maxCapacity: 2000
+  quantity: 950
+  position:
+    coord_x: 616.0
+    coord_y: 516.0
+
+- &Shelf70 id: 70
+  storedGoods:
+    name: Stove
+    weight: 150
+  maxCapacity: 2000
+  quantity: 10
+  position:
+    coord_x: 616.0
+    coord_y: 568.0
+
+- &Shelf71 id: 71
+  storedGoods:
+    name: Window
+    weight: 5
+  maxCapacity: 2000
+  quantity: 395
+  position:
+    coord_x: 693.0
+    coord_y: 100.0
+
+- &Shelf72 id: 72
+  storedGoods:
+    name: CD player
+    weight: 2
+  maxCapacity: 2000
+  quantity: 880
+  position:
+    coord_x: 693.0
+    coord_y: 152.0
+
+- &Shelf73 id: 73
+  storedGoods:
+    name: Toilet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 55
+  position:
+    coord_x: 693.0
+    coord_y: 204.0
+
+- &Shelf74 id: 74
+  storedGoods:
+    name: Printer
+    weight: 6
+  maxCapacity: 2000
+  quantity: 300
+  position:
+    coord_x: 693.0
+    coord_y: 256.0
+
+- &Shelf75 id: 75
+  storedGoods:
+    name: Steel bar
+    weight: 2
+  maxCapacity: 2000
+  quantity: 900
+  position:
+    coord_x: 693.0
+    coord_y: 308.0
+
+- &Shelf76 id: 76
+  storedGoods:
+    name: Carpet
+    weight: 3
+  maxCapacity: 2000
+  quantity: 640
+  position:
+    coord_x: 693.0
+    coord_y: 360.0
+
+- &Shelf77 id: 77
+  storedGoods:
+    name: Armchair
+    weight: 15
+  maxCapacity: 2000
+  quantity: 12
+  position:
+    coord_x: 693.0
+    coord_y: 412.0
+
+- &Shelf78 id: 78
+  storedGoods:
+    name: Dishwasher
+    weight: 120
+  maxCapacity: 2000
+  quantity: 15
+  position:
+    coord_x: 693.0
+    coord_y: 464.0
+
+- &Shelf79 id: 79
+  storedGoods:
+    name: Stove
+    weight: 150
+  maxCapacity: 2000
+  quantity: 12
+  position:
+    coord_x: 693.0
+    coord_y: 516.0
+
+- &Shelf80 id: 80
+  storedGoods:
+    name: Standing lamp
+    weight: 3
+  maxCapacity: 2000
+  quantity: 640
+  position:
+    coord_x: 693.0
+    coord_y: 568.0
+
+- &Shelf81 id: 81
+  storedGoods:
+    name: Microwave
+    weight: 8
+  maxCapacity: 2000
+  quantity: 230
+  position:
+    coord_x: 788.0
+    coord_y: 100.0
+
+- &Shelf82 id: 82
+  storedGoods:
+    name: Scale
+    weight: 3
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 788.0
+    coord_y: 152.0
+
+- &Shelf83 id: 83
+  storedGoods:
+    name: Washing mashine
+    weight: 140
+  maxCapacity: 2000
+  quantity: 11
+  position:
+    coord_x: 788.0
+    coord_y: 204.0
+
+- &Shelf84 id: 84
+  storedGoods:
+    name: Cupboard
+    weight: 10
+  maxCapacity: 2000
+  quantity: 180
+  position:
+    coord_x: 788.0
+    coord_y: 256.0
+
+- &Shelf85 id: 85
+  storedGoods:
+    name: Door
+    weight: 8
+  maxCapacity: 2000
+  quantity: 230
+  position:
+    coord_x: 788.0
+    coord_y: 308.0
+
+- &Shelf86 id: 86
+  storedGoods:
+    name: Fridge
+    weight: 200
+  maxCapacity: 2000
+  quantity: 10
+  position:
+    coord_x: 788.0
+    coord_y: 360.0
+
+- &Shelf87 id: 87
+  storedGoods:
+    name: Screen
+    weight: 5
+  maxCapacity: 2000
+  quantity: 100
+  position:
+    coord_x: 788.0
+    coord_y: 412.0
+
+- &Shelf88 id: 88
+  storedGoods:
+    name: Wardrobe
+    weight: 20
+  maxCapacity: 2000
+  quantity: 96
+  position:
+    coord_x: 788.0
+    coord_y: 464.0
+
+- &Shelf89 id: 89
+  storedGoods:
+    name: Plank
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1600
+  position:
+    coord_x: 788.0
+    coord_y: 516.0
+
+- &Shelf90 id: 90
+  storedGoods:
+    name: Cabinet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 64
+  position:
+    coord_x: 788.0
+    coord_y: 568.0
+
+- &Shelf91 id: 91
+  storedGoods:
+    name: Bath
+    weight: 60
+  maxCapacity: 2000
+  quantity: 25
+  position:
+    coord_x: 865.0
+    coord_y: 100.0
+
+- &Shelf92 id: 92
+  storedGoods:
+    name: Washing mashine
+    weight: 140
+  maxCapacity: 2000
+  quantity: 13
+  position:
+    coord_x: 865.0
+    coord_y: 152.0
+
+- &Shelf93 id: 93
+  storedGoods:
+    name: Sink
+    weight: 25
+  maxCapacity: 2000
+  quantity: 76
+  position:
+    coord_x: 865.0
+    coord_y: 204.0
+
+- &Shelf94 id: 94
+  storedGoods:
+    name: Mirror
+    weight: 4
+  maxCapacity: 2000
+  quantity: 330
+  position:
+    coord_x: 865.0
+    coord_y: 256.0
+
+- &Shelf95 id: 95
+  storedGoods:
+    name: Notebook
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1900
+  position:
+    coord_x: 865.0
+    coord_y: 308.0
+
+- &Shelf96 id: 96
+  storedGoods:
+    name: Shower
+    weight: 50
+  maxCapacity: 2000
+  quantity: 35
+  position:
+    coord_x: 865.0
+    coord_y: 360.0
+
+- &Shelf97 id: 97
+  storedGoods:
+    name: Bricks
+    weight: 10
+  maxCapacity: 2000
+  quantity: 199
+  position:
+    coord_x: 865.0
+    coord_y: 412.0
+
+- &Shelf98 id: 98
+  storedGoods:
+    name: Ironing board
+    weight: 5
+  maxCapacity: 2000
+  quantity: 330
+  position:
+    coord_x: 865.0
+    coord_y: 464.0
+
+- &Shelf99 id: 99
+  storedGoods:
+    name: Scale
+    weight: 3
+  maxCapacity: 2000
+  quantity: 640
+  position:
+    coord_x: 865.0
+    coord_y: 516.0
+
+- &Shelf100 id: 100
+  storedGoods:
+    name: Table
+    weight: 15
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 865.0
+    coord_y: 568.0
+
+- &Shelf101 id: 101
+  storedGoods:
+    name: Flowerpot
+    weight: 2
+  maxCapacity: 2000
+  quantity: 1000
+  position:
+    coord_x: 960.0
+    coord_y: 100.0
+
+- &Shelf102 id: 102
+  storedGoods:
+    name: DVD recorder
+    weight: 2
+  maxCapacity: 2000
+  quantity: 990
+  position:
+    coord_x: 960.0
+    coord_y: 152.0
+
+- &Shelf103 id: 103
+  storedGoods:
+    name: CD player
+    weight: 2
+  maxCapacity: 2000
+  quantity: 980
+  position:
+    coord_x: 960.0
+    coord_y: 204.0
+
+- &Shelf104 id: 104
+  storedGoods:
+    name: Drawer
+    weight: 45
+  maxCapacity: 2000
+  quantity: 41
+  position:
+    coord_x: 960.0
+    coord_y: 256.0
+
+- &Shelf105 id: 105
+  storedGoods:
+    name: Gate
+    weight: 20
+  maxCapacity: 2000
+  quantity: 96
+  position:
+    coord_x: 960.0
+    coord_y: 308.0
+
+- &Shelf106 id: 106
+  storedGoods:
+    name: Toilet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 58
+  position:
+    coord_x: 960.0
+    coord_y: 360.0
+
+- &Shelf107 id: 107
+  storedGoods:
+    name: Chair
+    weight: 5
+  maxCapacity: 2000
+  quantity: 340
+  position:
+    coord_x: 960.0
+    coord_y: 412.0
+
+- &Shelf108 id: 108
+  storedGoods:
+    name: TV
+    weight: 15
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 960.0
+    coord_y: 464.0
+
+- &Shelf109 id: 109
+  storedGoods:
+    name: Wardrobe
+    weight: 20
+  maxCapacity: 2000
+  quantity: 1
+  position:
+    coord_x: 960.0
+    coord_y: 516.0
+
+- &Shelf110 id: 110
+  storedGoods:
+    name: Wardrobe
+    weight: 20
+  maxCapacity: 2000
+  quantity: 95
+  position:
+    coord_x: 960.0
+    coord_y: 568.0
+
+- &Shelf111 id: 111
+  storedGoods:
+    name: Garden chair
+    weight: 5
+  maxCapacity: 2000
+  quantity: 380
+  position:
+    coord_x: 1037.0
+    coord_y: 100.0
+
+- &Shelf112 id: 112
+  storedGoods:
+    name: Cabinet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 65
+  position:
+    coord_x: 1037.0
+    coord_y: 152.0
+
+- &Shelf113 id: 113
+  storedGoods:
+    name: Bunkbed
+    weight: 45
+  maxCapacity: 2000
+  quantity: 30
+  position:
+    coord_x: 1037.0
+    coord_y: 204.0
+
+- &Shelf114 id: 114
+  storedGoods:
+    name: Bunkbed
+    weight: 45
+  maxCapacity: 2000
+  quantity: 42
+  position:
+    coord_x: 1037.0
+    coord_y: 256.0
+
+- &Shelf115 id: 115
+  storedGoods:
+    name: Tire
+    weight: 5
+  maxCapacity: 2000
+  quantity: 360
+  position:
+    coord_x: 1037.0
+    coord_y: 308.0
+
+- &Shelf116 id: 116
+  storedGoods:
+    name: Microwave
+    weight: 8
+  maxCapacity: 2000
+  quantity: 230
+  position:
+    coord_x: 1037.0
+    coord_y: 360.0
+
+- &Shelf117 id: 117
+  storedGoods:
+    name: Printer
+    weight: 6
+  maxCapacity: 2000
+  quantity: 310
+  position:
+    coord_x: 1037.0
+    coord_y: 412.0
+
+- &Shelf118 id: 118
+  storedGoods:
+    name: Table lamp
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1500
+  position:
+    coord_x: 1037.0
+    coord_y: 464.0
+
+- &Shelf119 id: 119
+  storedGoods:
+    name: Bath
+    weight: 60
+  maxCapacity: 2000
+  quantity: 30
+  position:
+    coord_x: 1037.0
+    coord_y: 516.0
+
+- &Shelf120 id: 120
+  storedGoods:
+    name: Sink
+    weight: 25
+  maxCapacity: 2000
+  quantity: 70
+  position:
+    coord_x: 1037.0
+    coord_y: 568.0
+
+- &Shelf121 id: 121
+  storedGoods:
+    name: Screen
+    weight: 5
+  maxCapacity: 2000
+  quantity: 180
+  position:
+    coord_x: 1132.0
+    coord_y: 100.0
+
+- &Shelf122 id: 122
+  storedGoods:
+    name: Radiator
+    weight: 50
+  maxCapacity: 2000
+  quantity: 25
+  position:
+    coord_x: 1132.0
+    coord_y: 152.0
+
+- &Shelf123 id: 123
+  storedGoods:
+    name: Steel bar
+    weight: 2
+  maxCapacity: 2000
+  quantity: 650
+  position:
+    coord_x: 1132.0
+    coord_y: 204.0
+
+- &Shelf124 id: 124
+  storedGoods:
+    name: Steel bar
+    weight: 2
+  maxCapacity: 2000
+  quantity: 900
+  position:
+    coord_x: 1132.0
+    coord_y: 256.0
+
+- &Shelf125 id: 125
+  storedGoods:
+    name: Plank
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1200
+  position:
+    coord_x: 1132.0
+    coord_y: 308.0
+
+- &Shelf126 id: 126
+  storedGoods:
+    name: Bricks
+    weight: 10
+  maxCapacity: 2000
+  quantity: 50
+  position:
+    coord_x: 1132.0
+    coord_y: 360.0
+
+- &Shelf127 id: 127
+  storedGoods:
+    name: Ironing board
+    weight: 5
+  maxCapacity: 2000
+  quantity: 250
+  position:
+    coord_x: 1132.0
+    coord_y: 412.0
+
+- &Shelf128 id: 128
+  storedGoods:
+    name: Mirror
+    weight: 4
+  maxCapacity: 2000
+  quantity: 300
+  position:
+    coord_x: 1132.0
+    coord_y: 464.0
+
+- &Shelf129 id: 129
+  storedGoods:
+    name: Armchair
+    weight: 15
+  maxCapacity: 2000
+  quantity: 110
+  position:
+    coord_x: 1132.0
+    coord_y: 516.0
+
+- &Shelf130 id: 130
+  storedGoods:
+    name: Light
+    weight: 3
+  maxCapacity: 2000
+  quantity: 500
+  position:
+    coord_x: 1132.0
+    coord_y: 568.0
+
+- &Shelf131 id: 131
+  storedGoods:
+    name: Cupboard
+    weight: 10
+  maxCapacity: 2000
+  quantity: 130
+  position:
+    coord_x: 1209.0
+    coord_y: 100.0
+
+- &Shelf132 id: 132
+  storedGoods:
+    name: Desk
+    weight: 10
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 1209.0
+    coord_y: 152.0
+
+- &Shelf133 id: 133
+  storedGoods:
+    name: Computer
+    weight: 2
+  maxCapacity: 2000
+  quantity: 200
+  position:
+    coord_x: 1209.0
+    coord_y: 204.0
+
+- &Shelf134 id: 134
+  storedGoods:
+    name: Treadmill
+    weight: 110
+  maxCapacity: 2000
+  quantity: 2
+  position:
+    coord_x: 1209.0
+    coord_y: 256.0
+
+- &Shelf135 id: 135
+  storedGoods:
+    name: Scale
+    weight: 3
+  maxCapacity: 2000
+  quantity: 130
+  position:
+    coord_x: 1209.0
+    coord_y: 308.0
+
+- &Shelf136 id: 136
+  storedGoods:
+    name: Sofa
+    weight: 60
+  maxCapacity: 2000
+  quantity: 0
+  position:
+    coord_x: 1209.0
+    coord_y: 360.0
+
+- &Shelf137 id: 137
+  storedGoods:
+    name: Carpet
+    weight: 3
+  maxCapacity: 2000
+  quantity: 2
+  position:
+    coord_x: 1209.0
+    coord_y: 412.0
+
+- &Shelf138 id: 138
+  storedGoods:
+    name: Radio
+    weight: 3
+  maxCapacity: 2000
+  quantity: 550
+  position:
+    coord_x: 1209.0
+    coord_y: 464.0
+
+- &Shelf139 id: 139
+  storedGoods:
+    name: TV
+    weight: 15
+  maxCapacity: 2000
+  quantity: 100
+  position:
+    coord_x: 1209.0
+    coord_y: 516.0
+
+- &Shelf140 id: 140
+  storedGoods:
+    name: Car battery
+    weight: 3
+  maxCapacity: 2000
+  quantity: 200
+  position:
+    coord_x: 1209.0
+    coord_y: 568.0
+
+- &Shelf141 id: 141
+  storedGoods:
+    name: Printer
+    weight: 6
+  maxCapacity: 2000
+  quantity: 120
+  position:
+    coord_x: 1304.0
+    coord_y: 100.0
+
+- &Shelf142 id: 142
+  storedGoods:
+    name: Fencepost
+    weight: 3
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 1304.0
+    coord_y: 152.0
+
+- &Shelf143 id: 143
+  storedGoods:
+    name: Bed
+    weight: 50
+  maxCapacity: 2000
+  quantity: 30
+  position:
+    coord_x: 1304.0
+    coord_y: 204.0
+
+- &Shelf144 id: 144
+  storedGoods:
+    name: Fridge
+    weight: 200
+  maxCapacity: 2000
+  quantity: 9
+  position:
+    coord_x: 1304.0
+    coord_y: 256.0
+
+- &Shelf145 id: 145
+  storedGoods:
+    name: Stove
+    weight: 150
+  maxCapacity: 2000
+  quantity: 6
+  position:
+    coord_x: 1304.0
+    coord_y: 308.0
+
+- &Shelf146 id: 146
+  storedGoods:
+    name: Toilet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 45
+  position:
+    coord_x: 1304.0
+    coord_y: 360.0
+
+- &Shelf147 id: 147
+  storedGoods:
+    name: Sink
+    weight: 25
+  maxCapacity: 2000
+  quantity: 50
+  position:
+    coord_x: 1304.0
+    coord_y: 412.0
+
+- &Shelf148 id: 148
+  storedGoods:
+    name: Wardrobe
+    weight: 20
+  maxCapacity: 2000
+  quantity: 80
+  position:
+    coord_x: 1304.0
+    coord_y: 464.0
+
+- &Shelf149 id: 149
+  storedGoods:
+    name: Mirror
+    weight: 4
+  maxCapacity: 2000
+  quantity: 400
+  position:
+    coord_x: 1304.0
+    coord_y: 516.0
+
+- &Shelf150 id: 150
+  storedGoods:
+    name: Dishwasher
+    weight: 120
+  maxCapacity: 2000
+  quantity: 5
+  position:
+    coord_x: 1304.0
+    coord_y: 568.0
+
+- &Shelf151 id: 151
+  storedGoods:
+    name: Sofa
+    weight: 60
+  maxCapacity: 2000
+  quantity: 25
+  position:
+    coord_x: 1381.0
+    coord_y: 100.0
+
+- &Shelf152 id: 152
+  storedGoods:
+    name: Sofa
+    weight: 60
+  maxCapacity: 2000
+  quantity: 25
+  position:
+    coord_x: 1381.0
+    coord_y: 152.0
+
+- &Shelf153 id: 153
+  storedGoods:
+    name: Desk
+    weight: 10
+  maxCapacity: 2000
+  quantity: 30
+  position:
+    coord_x: 1381.0
+    coord_y: 204.0
+
+- &Shelf154 id: 154
+  storedGoods:
+    name: Door
+    weight: 8
+  maxCapacity: 2000
+  quantity: 200
+  position:
+    coord_x: 1381.0
+    coord_y: 256.0
+
+- &Shelf155 id: 155
+  storedGoods:
+    name: Window
+    weight: 5
+  maxCapacity: 2000
+  quantity: 250
+  position:
+    coord_x: 1381.0
+    coord_y: 308.0
+
+- &Shelf156 id: 156
+  storedGoods:
+    name: Microwave
+    weight: 8
+  maxCapacity: 2000
+  quantity: 245
+  position:
+    coord_x: 1381.0
+    coord_y: 360.0
+
+- &Shelf157 id: 157
+  storedGoods:
+    name: Table lamp
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1100
+  position:
+    coord_x: 1381.0
+    coord_y: 412.0
+
+- &Shelf158 id: 158
+  storedGoods:
+    name: Standing lamp
+    weight: 3
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 1381.0
+    coord_y: 464.0
+
+- &Shelf159 id: 159
+  storedGoods:
+    name: Light
+    weight: 3
+  maxCapacity: 2000
+  quantity: 500
+  position:
+    coord_x: 1381.0
+    coord_y: 516.0
+
+- &Shelf160 id: 160
+  storedGoods:
+    name: CD player
+    weight: 2
+  maxCapacity: 2000
+  quantity: 750
+  position:
+    coord_x: 1381.0
+    coord_y: 568.0
+
+- &Shelf161 id: 161
+  storedGoods:
+    name: Wi-Fi router
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1200
+  position:
+    coord_x: 1476.0
+    coord_y: 100.0
+
+- &Shelf162 id: 162
+  storedGoods:
+    name: Printer
+    weight: 6
+  maxCapacity: 2000
+  quantity: 300
+  position:
+    coord_x: 1476.0
+    coord_y: 152.0
+
+- &Shelf163 id: 163
+  storedGoods:
+    name: Drawer
+    weight: 45
+  maxCapacity: 2000
+  quantity: 42
+  position:
+    coord_x: 1476.0
+    coord_y: 204.0
+
+- &Shelf164 id: 164
+  storedGoods:
+    name: Radiator
+    weight: 50
+  maxCapacity: 2000
+  quantity: 33
+  position:
+    coord_x: 1476.0
+    coord_y: 256.0
+
+- &Shelf165 id: 165
+  storedGoods:
+    name: Treadmill
+    weight: 110
+  maxCapacity: 2000
+  quantity: 16
+  position:
+    coord_x: 1476.0
+    coord_y: 308.0
+
+- &Shelf166 id: 166
+  storedGoods:
+    name: Ironing Board
+    weight: 5
+  maxCapacity: 2000
+  quantity: 390
+  position:
+    coord_x: 1476.0
+    coord_y: 360.0
+
+- &Shelf167 id: 167
+  storedGoods:
+    name: Iron
+    weight: 2
+  maxCapacity: 2000
+  quantity: 940
+  position:
+    coord_x: 1476.0
+    coord_y: 412.0
+
+- &Shelf168 id: 168
+  storedGoods:
+    name: Car battery
+    weight: 3
+  maxCapacity: 2000
+  quantity: 610
+  position:
+    coord_x: 1476.0
+    coord_y: 464.0
+
+- &Shelf169 id: 169
+  storedGoods:
+    name: Flowerpot
+    weight: 2
+  maxCapacity: 2000
+  quantity: 280
+  position:
+    coord_x: 1476.0
+    coord_y: 516.0
+
+- &Shelf170 id: 170
+  storedGoods:
+    name: Bricks
+    weight: 10
+  maxCapacity: 2000
+  quantity: 150
+  position:
+    coord_x: 1476.0
+    coord_y: 568.0
+
+- &Shelf171 id: 171
+  storedGoods:
+    name: DVD recorder
+    weight: 2
+  maxCapacity: 2000
+  quantity: 750
+  position:
+    coord_x: 1553.0
+    coord_y: 100.0
+
+- &Shelf172 id: 172
+  storedGoods:
+    name: Fencepost
+    weight: 3
+  maxCapacity: 2000
+  quantity: 600
+  position:
+    coord_x: 1553.0
+    coord_y: 152.0
+
+- &Shelf173 id: 173
+  storedGoods:
+    name: Gate
+    weight: 20
+  maxCapacity: 2000
+  quantity: 30
+  position:
+    coord_x: 1553.0
+    coord_y: 204.0
+
+- &Shelf174 id: 174
+  storedGoods:
+    name: Plank
+    weight: 1
+  maxCapacity: 2000
+  quantity: 1800
+  position:
+    coord_x: 1553.0
+    coord_y: 256.0
+
+- &Shelf175 id: 175
+  storedGoods:
+    name: Steel Bar
+    weight: 2
+  maxCapacity: 2000
+  quantity: 900
+  position:
+    coord_x: 1553.0
+    coord_y: 308.0
+
+- &Shelf176 id: 176
+  storedGoods:
+    name: Scale
+    weight: 3
+  maxCapacity: 2000
+  quantity: 400
+  position:
+    coord_x: 1553.0
+    coord_y: 360.0
+
+- &Shelf177 id: 177
+  storedGoods:
+    name: Bunkbed
+    weight: 45
+  maxCapacity: 2000
+  quantity: 42
+  position:
+    coord_x: 1553.0
+    coord_y: 412.0
+
+- &Shelf178 id: 178
+  storedGoods:
+    name: Carpet
+    weight: 3
+  maxCapacity: 2000
+  quantity: 660
+  position:
+    coord_x: 1553.0
+    coord_y: 464.0
+
+- &Shelf179 id: 179
+  storedGoods:
+    name: Tire
+    weight: 5
+  maxCapacity: 2000
+  quantity: 300
+  position:
+    coord_x: 1553.0
+    coord_y: 516.0
+
+- &Shelf180 id: 180
+  storedGoods:
+    name: Cabinet
+    weight: 30
+  maxCapacity: 2000
+  quantity: 60
+  position:
+    coord_x: 1553.0
+    coord_y: 568.0
+
+
+# Default goods requests
+requests:
+- &Request1 id: 1
+  goods:
+   - name: Table
+   - name: Dishwasher
+  quantity:
+   - 1
+   - 1
+
+- &Request2 id: 2
+  goods:
+    - name: Stove
+  quantity:
+    - 1
+
+- &Request3 id: 3
+  goods:
+    - name: Sofa
+    - name: Bunkbed
+  quantity:
+    - 4
+    - 1
+
+- &Request4 id: 4
+  goods:
+    - name: Treadmill
+  quantity:
+    - 3
+
+- &Request5 id: 5
+  goods:
+    - name: Carpet
+    - name: Plank
+  quantity:
+    - 5
+    - 100
+
+# Nodes for the Map
+nodes:
+- &Node1 id: 1
+  nextNodes:
+    - *Node2
+    - *Node1019
+  location:
+    coord_x: 95.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node2 id: 2
+  nextNodes:
+    - *Node1
+    - *Node3
+  location:
+    coord_x: 95.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node3 id: 3
+  nextNodes:
+    - *Node2
+    - *Node4
+  location:
+    coord_x: 95.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node4 id: 4
+  nextNodes:
+    - *Node3
+    - *Node5
+  location:
+    coord_x: 95.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node5 id: 5
+  nextNodes:
+    - *Node4
+    - *Node6
+  location:
+    coord_x: 95.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node6 id: 6
+  nextNodes:
+    - *Node5
+    - *Node7
+  location:
+    coord_x: 95.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node7 id: 7
+  nextNodes:
+    - *Node6
+    - *Node8
+  location:
+    coord_x: 95.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node8 id: 8
+  nextNodes:
+    - *Node7
+    - *Node9
+  location:
+    coord_x: 95.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node9 id: 9
+  nextNodes:
+    - *Node8
+    - *Node10
+  location:
+    coord_x: 95.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node10 id: 10
+  nextNodes:
+    - *Node9
+    - *Node1001
+  location:
+    coord_x: 95.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node11 id: 11
+  nextNodes:
+    - *Node1020
+    - *Node12
+  location:
+    coord_x: 257.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node12 id: 12
+  nextNodes:
+    - *Node11
+    - *Node13
+  location:
+    coord_x: 257.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node13 id: 13
+  nextNodes:
+    - *Node12
+    - *Node14
+  location:
+    coord_x: 257.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node14 id: 14
+  nextNodes:
+    - *Node13
+    - *Node15
+  location:
+    coord_x: 257.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node15 id: 15
+  nextNodes:
+    - *Node14
+    - *Node16
+  location:
+    coord_x: 257.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node16 id: 16
+  nextNodes:
+    - *Node15
+    - *Node17
+  location:
+    coord_x: 257.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node17 id: 17
+  nextNodes:
+    - *Node16
+    - *Node18
+  location:
+    coord_x: 257.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node18 id: 18
+  nextNodes:
+    - *Node17
+    - *Node19
+  location:
+    coord_x: 257.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node19 id: 19
+  nextNodes:
+    - *Node18
+    - *Node20
+  location:
+    coord_x: 257.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node20 id: 20
+  nextNodes:
+    - *Node19
+    - *Node1002
+  location:
+    coord_x: 257.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node21 id: 21
+  nextNodes:
+    - *Node1021
+    - *Node22
+  location:
+    coord_x: 267.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node22 id: 22
+  nextNodes:
+    - *Node21
+    - *Node23
+  location:
+    coord_x: 267.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node23 id: 23
+  nextNodes:
+    - *Node22
+    - *Node24
+  location:
+    coord_x: 267.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node24 id: 24
+  nextNodes:
+    - *Node23
+    - *Node25
+  location:
+    coord_x: 267.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node25 id: 25
+  nextNodes:
+    - *Node24
+    - *Node26
+  location:
+    coord_x: 267.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node26 id: 26
+  nextNodes:
+    - *Node25
+    - *Node27
+  location:
+    coord_x: 267.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node27 id: 27
+  nextNodes:
+    - *Node26
+    - *Node28
+  location:
+    coord_x: 267.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node28 id: 28
+  nextNodes:
+    - *Node27
+    - *Node29
+  location:
+    coord_x: 267.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node29 id: 29
+  nextNodes:
+    - *Node28
+    - *Node30
+  location:
+    coord_x: 267.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node30 id: 30
+  nextNodes:
+    - *Node29
+    - *Node1003
+  location:
+    coord_x: 267.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node31 id: 31
+  nextNodes:
+    - *Node1022
+    - *Node32
+  location:
+    coord_x: 429.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node32 id: 32
+  nextNodes:
+    - *Node31
+    - *Node33
+  location:
+    coord_x: 429.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node33 id: 33
+  nextNodes:
+    - *Node32
+    - *Node34
+  location:
+    coord_x: 429.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node34 id: 34
+  nextNodes:
+    - *Node33
+    - *Node35
+  location:
+    coord_x: 429.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node35 id: 35
+  nextNodes:
+    - *Node34
+    - *Node35
+  location:
+    coord_x: 429.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node36 id: 36
+  nextNodes:
+    - *Node35
+    - *Node37
+  location:
+    coord_x: 429.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node37 id: 37
+  nextNodes:
+    - *Node36
+    - *Node38
+  location:
+    coord_x: 429.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node38 id: 38
+  nextNodes:
+    - *Node37
+    - *Node39
+  location:
+    coord_x: 429.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node39 id: 39
+  nextNodes:
+    - *Node38
+    - *Node40
+  location:
+    coord_x: 429.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node40 id: 40
+  nextNodes:
+    - *Node39
+    - *Node1004
+  location:
+    coord_x: 429.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node41 id: 41
+  nextNodes:
+    - *Node1023
+    - *Node42
+  location:
+    coord_x: 439.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node42 id: 42
+  nextNodes:
+    - *Node41
+    - *Node43
+  location:
+    coord_x: 439.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node43 id: 43
+  nextNodes:
+    - *Node42
+    - *Node44
+  location:
+    coord_x: 439.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node44 id: 44
+  nextNodes:
+    - *Node43
+    - *Node45
+  location:
+    coord_x: 439.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node45 id: 45
+  nextNodes:
+    - *Node44
+    - *Node46
+  location:
+    coord_x: 439.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node46 id: 46
+  nextNodes:
+    - *Node45
+    - *Node47
+  location:
+    coord_x: 439.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node47 id: 47
+  nextNodes:
+    - *Node46
+    - *Node48
+  location:
+    coord_x: 439.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node48 id: 48
+  nextNodes:
+    - *Node47
+    - *Node49
+  location:
+    coord_x: 439.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node49 id: 49
+  nextNodes:
+    - *Node48
+    - *Node50
+  location:
+    coord_x: 439.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node50 id: 50
+  nextNodes:
+    - *Node49
+    - *Node1005
+  location:
+    coord_x: 439.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node51 id: 51
+  nextNodes:
+    - *Node1024
+    - *Node52
+  location:
+    coord_x: 601.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node52 id: 52
+  nextNodes:
+    - *Node51
+    - *Node53
+  location:
+    coord_x: 601.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node53 id: 53
+  nextNodes:
+    - *Node52
+    - *Node54
+  location:
+    coord_x: 601.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node54 id: 54
+  nextNodes:
+    - *Node53
+    - *Node55
+  location:
+    coord_x: 601.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node55 id: 55
+  nextNodes:
+    - *Node54
+    - *Node56
+  location:
+    coord_x: 601.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node56 id: 56
+  nextNodes:
+    - *Node55
+    - *Node57
+  location:
+    coord_x: 601.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node57 id: 57
+  nextNodes:
+    - *Node56
+    - *Node58
+  location:
+    coord_x: 601.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node58 id: 58
+  nextNodes:
+    - *Node57
+    - *Node59
+  location:
+    coord_x: 601.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node59 id: 59
+  nextNodes:
+    - *Node58
+    - *Node60
+  location:
+    coord_x: 601.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node60 id: 60
+  nextNodes:
+    - *Node59
+    - *Node1006
+  location:
+    coord_x: 601.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node61 id: 61
+  nextNodes:
+    - *Node1025
+    - *Node62
+  location:
+    coord_x: 611.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node62 id: 62
+  nextNodes:
+    - *Node61
+    - *Node63
+  location:
+    coord_x: 611.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node63 id: 63
+  nextNodes:
+    - *Node62
+    - *Node64
+  location:
+    coord_x: 611.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node64 id: 64
+  nextNodes:
+    - *Node63
+    - *Node65
+  location:
+    coord_x: 611.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node65 id: 65
+  nextNodes:
+    - *Node64
+    - *Node66
+  location:
+    coord_x: 611.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node66 id: 66
+  nextNodes:
+    - *Node65
+    - *Node67
+  location:
+    coord_x: 611.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node67 id: 67
+  nextNodes:
+    - *Node66
+    - *Node68
+  location:
+    coord_x: 611.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node68 id: 68
+  nextNodes:
+    - *Node67
+    - *Node69
+  location:
+    coord_x: 611.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node69 id: 69
+  nextNodes:
+    - *Node68
+    - *Node70
+  location:
+    coord_x: 611.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node70 id: 70
+  nextNodes:
+    - *Node69
+    - *Node1007
+  location:
+    coord_x: 611.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node71 id: 71
+  nextNodes:
+    - *Node1026
+    - *Node72
+  location:
+    coord_x: 773.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node72 id: 72
+  nextNodes:
+    - *Node71
+    - *Node73
+  location:
+    coord_x: 773.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node73 id: 73
+  nextNodes:
+    - *Node72
+    - *Node74
+  location:
+    coord_x: 773.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node74 id: 74
+  nextNodes:
+    - *Node73
+    - *Node75
+  location:
+    coord_x: 773.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node75 id: 75
+  nextNodes:
+    - *Node74
+    - *Node76
+  location:
+    coord_x: 773.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node76 id: 76
+  nextNodes:
+    - *Node75
+    - *Node77
+  location:
+    coord_x: 773.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node77 id: 77
+  nextNodes:
+    - *Node76
+    - *Node78
+  location:
+    coord_x: 773.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node78 id: 78
+  nextNodes:
+    - *Node77
+    - *Node79
+  location:
+    coord_x: 773.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node79 id: 79
+  nextNodes:
+    - *Node78
+    - *Node80
+  location:
+    coord_x: 773.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node80 id: 80
+  nextNodes:
+    - *Node79
+    - *Node1008
+  location:
+    coord_x: 773.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node81 id: 81
+  nextNodes:
+    - *Node1027
+    - *Node82
+  location:
+    coord_x: 783.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node82 id: 82
+  nextNodes:
+    - *Node81
+    - *Node83
+  location:
+    coord_x: 783.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node83 id: 83
+  nextNodes:
+    - *Node82
+    - *Node84
+  location:
+    coord_x: 783.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node84 id: 84
+  nextNodes:
+    - *Node83
+    - *Node85
+  location:
+    coord_x: 783.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node85 id: 85
+  nextNodes:
+    - *Node84
+    - *Node86
+  location:
+    coord_x: 783.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node86 id: 86
+  nextNodes:
+    - *Node85
+    - *Node87
+  location:
+    coord_x: 783.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node87 id: 87
+  nextNodes:
+    - *Node86
+    - *Node88
+  location:
+    coord_x: 783.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node88 id: 88
+  nextNodes:
+    - *Node87
+    - *Node89
+  location:
+    coord_x: 783.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node89 id: 89
+  nextNodes:
+    - *Node88
+    - *Node90
+  location:
+    coord_x: 783.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node90 id: 90
+  nextNodes:
+    - *Node89
+    - *Node1009
+  location:
+    coord_x: 783.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node91 id: 91
+  nextNodes:
+    - *Node1028
+    - *Node92
+  location:
+    coord_x: 945.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node92 id: 92
+  nextNodes:
+    - *Node91
+    - *Node93
+  location:
+    coord_x: 945.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node93 id: 93
+  nextNodes:
+    - *Node92
+    - *Node94
+  location:
+    coord_x: 945.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node94 id: 94
+  nextNodes:
+    - *Node93
+    - *Node95
+  location:
+    coord_x: 945.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node95 id: 95
+  nextNodes:
+    - *Node94
+    - *Node96
+  location:
+    coord_x: 945.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node96 id: 96
+  nextNodes:
+    - *Node95
+    - *Node97
+  location:
+    coord_x: 945.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node97 id: 97
+  nextNodes:
+    - *Node96
+    - *Node98
+  location:
+    coord_x: 945.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node98 id: 98
+  nextNodes:
+    - *Node97
+    - *Node99
+  location:
+    coord_x: 945.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node99 id: 99
+  nextNodes:
+    - *Node98
+    - *Node100
+  location:
+    coord_x: 945.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node100 id: 100
+  nextNodes:
+    - *Node99
+    - *Node1010
+  location:
+    coord_x: 945.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node101 id: 101
+  nextNodes:
+    - *Node1029
+    - *Node102
+  location:
+    coord_x: 955.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node102 id: 102
+  nextNodes:
+    - *Node101
+    - *Node103
+  location:
+    coord_x: 955.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node103 id: 103
+  nextNodes:
+    - *Node102
+    - *Node104
+  location:
+    coord_x: 955.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node104 id: 104
+  nextNodes:
+    - *Node103
+    - *Node105
+  location:
+    coord_x: 955.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node105 id: 105
+  nextNodes:
+    - *Node104
+    - *Node106
+  location:
+    coord_x: 955.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node106 id: 106
+  nextNodes:
+    - *Node105
+    - *Node107
+  location:
+    coord_x: 955.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node107 id: 107
+  nextNodes:
+    - *Node106
+    - *Node108
+  location:
+    coord_x: 955.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node108 id: 108
+  nextNodes:
+    - *Node107
+    - *Node109
+  location:
+    coord_x: 955.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node109 id: 109
+  nextNodes:
+    - *Node108
+    - *Node110
+  location:
+    coord_x: 955.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node110 id: 110
+  nextNodes:
+    - *Node109
+    - *Node1011
+  location:
+    coord_x: 955.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node111 id: 111
+  nextNodes:
+    - *Node1030
+    - *Node112
+  location:
+    coord_x: 1117.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node112 id: 112
+  nextNodes:
+    - *Node111
+    - *Node113
+  location:
+    coord_x: 1117.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node113 id: 113
+  nextNodes:
+    - *Node112
+    - *Node114
+  location:
+    coord_x: 1117.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node114 id: 114
+  nextNodes:
+    - *Node113
+    - *Node115
+  location:
+    coord_x: 1117.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node115 id: 115
+  nextNodes:
+    - *Node114
+    - *Node116
+  location:
+    coord_x: 1117.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node116 id: 116
+  nextNodes:
+    - *Node115
+    - *Node117
+  location:
+    coord_x: 1117.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node117 id: 117
+  nextNodes:
+    - *Node116
+    - *Node118
+  location:
+    coord_x: 1117.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node118 id: 118
+  nextNodes:
+    - *Node117
+    - *Node119
+  location:
+    coord_x: 1117.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node119 id: 119
+  nextNodes:
+    - *Node118
+    - *Node120
+  location:
+    coord_x: 1117.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node120 id: 120
+  nextNodes:
+    - *Node119
+    - *Node1012
+  location:
+    coord_x: 1117.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node121 id: 121
+  nextNodes:
+    - *Node1031
+    - *Node122
+  location:
+    coord_x: 1127.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node122 id: 122
+  nextNodes:
+    - *Node121
+    - *Node123
+  location:
+    coord_x: 1127.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node123 id: 123
+  nextNodes:
+    - *Node122
+    - *Node124
+  location:
+    coord_x: 1127.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node124 id: 124
+  nextNodes:
+    - *Node123
+    - *Node125
+  location:
+    coord_x: 1127.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node125 id: 125
+  nextNodes:
+    - *Node124
+    - *Node126
+  location:
+    coord_x: 1127.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node126 id: 126
+  nextNodes:
+    - *Node125
+    - *Node127
+  location:
+    coord_x: 1127.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node127 id: 127
+  nextNodes:
+    - *Node126
+    - *Node128
+  location:
+    coord_x: 1127.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node128 id: 128
+  nextNodes:
+    - *Node127
+    - *Node129
+  location:
+    coord_x: 1127.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node129 id: 129
+  nextNodes:
+    - *Node128
+    - *Node130
+  location:
+    coord_x: 1127.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node130 id: 130
+  nextNodes:
+    - *Node129
+    - *Node1013
+  location:
+    coord_x: 1127.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node131 id: 131
+  nextNodes:
+    - *Node1032
+    - *Node132
+  location:
+    coord_x: 1289.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node132 id: 132
+  nextNodes:
+    - *Node131
+    - *Node133
+  location:
+    coord_x: 1289.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node133 id: 133
+  nextNodes:
+    - *Node132
+    - *Node134
+  location:
+    coord_x: 1289.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node134 id: 134
+  nextNodes:
+    - *Node133
+    - *Node135
+  location:
+    coord_x: 1289.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node135 id: 135
+  nextNodes:
+    - *Node134
+    - *Node136
+  location:
+    coord_x: 1289.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node136 id: 136
+  nextNodes:
+    - *Node135
+    - *Node137
+  location:
+    coord_x: 1289.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node137 id: 137
+  nextNodes:
+    - *Node136
+    - *Node138
+  location:
+    coord_x: 1289.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node138 id: 138
+  nextNodes:
+    - *Node137
+    - *Node139
+  location:
+    coord_x: 1289.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node139 id: 139
+  nextNodes:
+    - *Node138
+    - *Node140
+  location:
+    coord_x: 1289.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node140 id: 140
+  nextNodes:
+    - *Node139
+    - *Node1014
+  location:
+    coord_x: 1289.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node141 id: 141
+  nextNodes:
+    - *Node1033
+    - *Node142
+  location:
+    coord_x: 1299.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node142 id: 142
+  nextNodes:
+    - *Node141
+    - *Node143
+  location:
+    coord_x: 1299.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node143 id: 143
+  nextNodes:
+    - *Node142
+    - *Node144
+  location:
+    coord_x: 1299.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node144 id: 144
+  nextNodes:
+    - *Node143
+    - *Node145
+  location:
+    coord_x: 1299.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node145 id: 145
+  nextNodes:
+    - *Node144
+    - *Node146
+  location:
+    coord_x: 1299.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node146 id: 146
+  nextNodes:
+    - *Node145
+    - *Node147
+  location:
+    coord_x: 1299.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node147 id: 147
+  nextNodes:
+    - *Node146
+    - *Node148
+  location:
+    coord_x: 1299.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node148 id: 148
+  nextNodes:
+    - *Node147
+    - *Node149
+  location:
+    coord_x: 1299.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node149 id: 149
+  nextNodes:
+    - *Node148
+    - *Node150
+  location:
+    coord_x: 1299.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node150 id: 150
+  nextNodes:
+    - *Node149
+    - *Node1015
+  location:
+    coord_x: 1299.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node151 id: 151
+  nextNodes:
+    - *Node1034
+    - *Node152
+  location:
+    coord_x: 1461.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node152 id: 152
+  nextNodes:
+    - *Node151
+    - *Node153
+  location:
+    coord_x: 1461.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node153 id: 153
+  nextNodes:
+    - *Node152
+    - *Node154
+  location:
+    coord_x: 1461.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node154 id: 154
+  nextNodes:
+    - *Node153
+    - *Node155
+  location:
+    coord_x: 1461.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node155 id: 155
+  nextNodes:
+    - *Node154
+    - *Node156
+  location:
+    coord_x: 1461.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node156 id: 156
+  nextNodes:
+    - *Node155
+    - *Node157
+  location:
+    coord_x: 1461.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node157 id: 157
+  nextNodes:
+    - *Node156
+    - *Node158
+  location:
+    coord_x: 1461.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node158 id: 158
+  nextNodes:
+    - *Node157
+    - *Node159
+  location:
+    coord_x: 1461.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node159 id: 159
+  nextNodes:
+    - *Node158
+    - *Node160
+  location:
+    coord_x: 1461.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node160 id: 160
+  nextNodes:
+    - *Node159
+    - *Node1016
+  location:
+    coord_x: 1461.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node161 id: 161
+  nextNodes:
+    - *Node1025
+    - *Node162
+  location:
+    coord_x: 1471.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node162 id: 162
+  nextNodes:
+    - *Node161
+    - *Node163
+  location:
+    coord_x: 1471.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node163 id: 163
+  nextNodes:
+    - *Node162
+    - *Node164
+  location:
+    coord_x: 1471.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node164 id: 164
+  nextNodes:
+    - *Node163
+    - *Node165
+  location:
+    coord_x: 1471.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node165 id: 165
+  nextNodes:
+    - *Node164
+    - *Node166
+  location:
+    coord_x: 1471.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node166 id: 166
+  nextNodes:
+    - *Node165
+    - *Node167
+  location:
+    coord_x: 1471.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node167 id: 167
+  nextNodes:
+    - *Node166
+    - *Node168
+  location:
+    coord_x: 1471.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node168 id: 168
+  nextNodes:
+    - *Node167
+    - *Node169
+  location:
+    coord_x: 1471.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node169 id: 169
+  nextNodes:
+    - *Node168
+    - *Node170
+  location:
+    coord_x: 1471.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node170 id: 170
+  nextNodes:
+    - *Node169
+    - *Node1017
+  location:
+    coord_x: 1471.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+- &Node171 id: 171
+  nextNodes:
+    - *Node1036
+    - *Node172
+  location:
+    coord_x: 1633.0
+    coord_y: 125.0
+  displayed: false
+  occupied: false
+
+- &Node172 id: 172
+  nextNodes:
+    - *Node171
+    - *Node173
+  location:
+    coord_x: 1633.0
+    coord_y: 177.0
+  displayed: false
+  occupied: false
+
+- &Node173 id: 173
+  nextNodes:
+    - *Node172
+    - *Node174
+  location:
+    coord_x: 1633.0
+    coord_y: 229.0
+  displayed: false
+  occupied: false
+
+- &Node174 id: 174
+  nextNodes:
+    - *Node173
+    - *Node175
+  location:
+    coord_x: 1633.0
+    coord_y: 281.0
+  displayed: false
+  occupied: false
+
+- &Node175 id: 175
+  nextNodes:
+    - *Node174
+    - *Node176
+  location:
+    coord_x: 1633.0
+    coord_y: 333.0
+  displayed: false
+  occupied: false
+
+- &Node176 id: 176
+  nextNodes:
+    - *Node175
+    - *Node177
+  location:
+    coord_x: 1633.0
+    coord_y: 385.0
+  displayed: false
+  occupied: false
+
+- &Node177 id: 177
+  nextNodes:
+    - *Node176
+    - *Node178
+  location:
+    coord_x: 1633.0
+    coord_y: 437.0
+  displayed: false
+  occupied: false
+
+- &Node178 id: 178
+  nextNodes:
+    - *Node177
+    - *Node179
+  location:
+    coord_x: 1633.0
+    coord_y: 489.0
+  displayed: false
+  occupied: false
+
+- &Node179 id: 179
+  nextNodes:
+    - *Node178
+    - *Node180
+  location:
+    coord_x: 1633.0
+    coord_y: 541.0
+  displayed: false
+  occupied: false
+
+- &Node180 id: 180
+  nextNodes:
+    - *Node179
+    - *Node1018
+  location:
+    coord_x: 1633.0
+    coord_y: 593.0
+  displayed: false
+  occupied: false
+
+#spodny rad spojovacich nodes
+- &Node1001 id: 1001
+  nextNodes:
+    - *Node10
+    - *Node1002
+  location:
+    coord_x: 95.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1002 id: 1002
+  nextNodes:
+    - *Node1001
+    - *Node20
+    - *Node1003
+  location:
+    coord_x: 257.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1003 id: 1003
+  nextNodes:
+    - *Node1002
+    - *Node30
+    - *Node1004
+  location:
+    coord_x: 267.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1004 id: 1004
+  nextNodes:
+    - *Node1003
+    - *Node40
+    - *Node1005
+  location:
+    coord_x: 429.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1005 id: 1005
+  nextNodes:
+    - *Node1004
+    - *Node50
+    - *Node1006
+  location:
+    coord_x: 439.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1006 id: 1006
+  nextNodes:
+    - *Node1005
+    - *Node60
+    - *Node1007
+  location:
+    coord_x: 601.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1007 id: 1007
+  nextNodes:
+    - *Node1006
+    - *Node70
+    - *Node1008
+  location:
+    coord_x: 611.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1008 id: 1008
+  nextNodes:
+    - *Node1007
+    - *Node80
+    - *Node1009
+  location:
+    coord_x: 773.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1009 id: 1009
+  nextNodes:
+    - *Node1008
+    - *Node90
+    - *Node1010
+  location:
+    coord_x: 783.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1010 id: 1010
+  nextNodes:
+    - *Node1009
+    - *Node100
+    - *Node1011
+  location:
+    coord_x: 945.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1011 id: 1011
+  nextNodes:
+    - *Node1010
+    - *Node110
+    - *Node1012
+  location:
+    coord_x: 955.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1012 id: 1012
+  nextNodes:
+    - *Node1011
+    - *Node120
+    - *Node1013
+  location:
+    coord_x: 1117.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1013 id: 1013
+  nextNodes:
+    - *Node1012
+    - *Node130
+    - *Node1014
+  location:
+    coord_x: 1127.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1014 id: 1014
+  nextNodes:
+    - *Node1013
+    - *Node140
+    - *Node1015
+  location:
+    coord_x: 1289.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1015 id: 1015
+  nextNodes:
+    - *Node1014
+    - *Node150
+    - *Node1016
+  location:
+    coord_x: 1299.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1016 id: 1016
+  nextNodes:
+    - *Node1015
+    - *Node160
+    - *Node1017
+  location:
+    coord_x: 1461.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1017 id: 1017
+  nextNodes:
+    - *Node1016
+    - *Node170
+    - *Node1018
+  location:
+    coord_x: 1471.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+- &Node1018 id: 1018
+  nextNodes:
+    - *Node1017
+    - *Node180
+    - *Node3000
+  location:
+    coord_x: 1633.0
+    coord_y: 645.0
+  displayed: false
+  occupied: false
+
+#horny rad spojovacych nodes
+- &Node1019 id: 1019
+  nextNodes:
+    - *Node1
+    - *Node1020
+  location:
+    coord_x: 95.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1020 id: 1020
+  nextNodes:
+    - *Node1019
+    - *Node11
+    - *Node1021
+  location:
+    coord_x: 257.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1021 id: 1021
+  nextNodes:
+    - *Node1020
+    - *Node21
+    - *Node1022
+  location:
+    coord_x: 267.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1022 id: 1022
+  nextNodes:
+    - *Node1021
+    - *Node31
+    - *Node1023
+  location:
+    coord_x: 429.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1023 id: 1023
+  nextNodes:
+    - *Node1022
+    - *Node41
+    - *Node1024
+  location:
+    coord_x: 439.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1024 id: 1024
+  nextNodes:
+    - *Node1023
+    - *Node51
+    - *Node1025
+  location:
+    coord_x: 601.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1025 id: 1025
+  nextNodes:
+    - *Node1024
+    - *Node61
+    - *Node1026
+  location:
+    coord_x: 611.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1026 id: 1026
+  nextNodes:
+    - *Node1025
+    - *Node71
+    - *Node1027
+  location:
+    coord_x: 773.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1027 id: 1027
+  nextNodes:
+    - *Node1026
+    - *Node81
+    - *Node1028
+  location:
+    coord_x: 783.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1028 id: 1028
+  nextNodes:
+    - *Node1027
+    - *Node91
+    - *Node1029
+  location:
+    coord_x: 945.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1029 id: 1029
+  nextNodes:
+    - *Node1028
+    - *Node101
+    - *Node1030
+  location:
+    coord_x: 955.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1030 id: 1030
+  nextNodes:
+    - *Node1029
+    - *Node111
+    - *Node1031
+  location:
+    coord_x: 1117.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1031 id: 1031
+  nextNodes:
+    - *Node1030
+    - *Node121
+    - *Node1032
+  location:
+    coord_x: 1127.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1032 id: 1032
+  nextNodes:
+    - *Node1031
+    - *Node131
+    - *Node1033
+  location:
+    coord_x: 1289.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1033 id: 1033
+  nextNodes:
+    - *Node1032
+    - *Node141
+    - *Node1034
+  location:
+    coord_x: 1299.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1034 id: 1034
+  nextNodes:
+    - *Node1033
+    - *Node151
+    - *Node1035
+  location:
+    coord_x: 1461.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1035 id: 1035
+  nextNodes:
+    - *Node1034
+    - *Node161
+    - *Node1036
+  location:
+    coord_x: 1471.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+- &Node1036 id: 1036
+  nextNodes:
+    - *Node1035
+    - *Node171
+  location:
+    coord_x: 1633.0
+    coord_y: 63.0
+  displayed: false
+  occupied: false
+
+#parkoviska na voziky boli vymazane bude to inak
+
+#vydajna tovaru
+- &Node3000 id: 3000
+  nextNodes:
+    - *Node1018
+  location:
+    coord_x: 1633.0
+    coord_y: 697.0
+  displayed: false
+  occupied: false
+
+
+...
