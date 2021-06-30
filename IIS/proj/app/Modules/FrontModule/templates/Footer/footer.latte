@@ -1,0 +1,57 @@
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small black darken-3">
+ 
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+
+      <div class="col-md py-5">
+        <div class="flex-center">
+           <a  n:href="Homepage:">
+             <img src="{$basePath}/img/logo.png" width="100px" height="100px" alt="logo" >
+           </a>
+       </div>
+     </div>
+     <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-1">
+        <div class="mb-5 flex-center">
+
+          <!-- Call to action -->
+          {if !$user->isLoggedIn()}
+          <ul class="list-unstyled list-inline text-center py-1">
+            <li class="list-inline-item">
+              <h5 class="mb-1">Register now</h5>
+            </li>
+            <li class="list-inline-item">
+          <a n:href="Sign:up" class="btn btn-success btn-rounded">Sign up!</a>
+            </li>
+          </ul>
+          {/if}
+          <!-- Call to action -->
+          
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a n:href="Homepage">GiveMeRoom</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

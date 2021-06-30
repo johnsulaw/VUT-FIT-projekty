@@ -1,0 +1,137 @@
+{block content}
+<div>
+    <table id="user_reservations_table">
+        <thead>
+            <tr id="users_table_firstrow">
+ 
+            </tr>
+        </thead>
+      
+    </table>
+</div>
+
+
+
+
+
+<div id="reservation" class="container my-5 py-3 z-depth-1 rounded" style="padding-top: 100px;">
+
+    <div class="row d-flex justify-content-center" style="padding-bottom: 50px;">
+        <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">You got rooms in</h1>
+    </div>
+  <!--Section: Content-->
+  <section class="dark-grey-text">
+
+    <!-- Shopping Cart table -->
+    <div class="table-responsive">
+
+      <table class="table product-table mb-0">
+
+        <!-- Table head -->
+        <thead class="mdb-color lighten-5">
+          <tr>
+            <th></th>
+            <th class="font-weight-bold">
+              <strong>Reservation ID</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>Hotel</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+              <strong>From</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>To</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>Price</strong>
+            </th>
+            <th class="font-weight-bold">
+                <strong>Room</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+                <strong>Cancel reservation</strong>
+            </th>
+          </tr>
+        </thead>
+        <!-- /.Table head -->
+
+        <!-- Table body -->
+        <tbody>
+            {var $date_from = "";}
+            {var $date_to = "";}
+            
+            {foreach $guest_reservations as $reservation}
+            
+
+            {do list($date_from, $time) = explode(" ", $reservation->from_date);
+                list($date_to, $time) = explode(" ", $reservation->to_date);
+            }
+            
+          <!-- First row -->
+          <tr>
+            <th scope="row">
+                <img src="{$basePath}/img/hotels/{$presenter->getHotelImage($reservation->hotel_id)}" alt="hotel" class="img-fluid rounded z-depth-0 " width="200" height="200" style="object-fit: cover;">
+            </th>
+
+            <td class="font-weight-bold">
+                <p>{$reservation->id}</p>
+            </td>
+
+       
+
+            <td class="font-weight-bold">
+                {$presenter->getHotelName($reservation->hotel_id)}
+            </td>
+
+          
+            
+            <td class="font-weight-bold">
+                {$date_from}
+            </td>
+
+          
+            <td class="font-weight-bold">
+                {$date_to}
+            </td>
+            
+            
+            <td class="font-weight-bold">
+              <strong>{$reservation->price}€</strong>
+            </td>
+
+
+            <td class="font-weight-bold">
+                {$reservation->room_id}
+            </td>
+
+            <td>
+                <a n:href="deleteReservation! $reservation->id"><button type="button" class="btn btn-sm btn-danger font-weight-bold" data-toggle="tooltip" data-placement="top" title="Cancel reservation">X</button></a>
+            </td>
+
+          </tr>
+          <!-- /.First row -->
+
+          {/foreach}
+
+        </tbody>
+        <!-- /.Table body -->
+
+      </table>
+
+    </div>
+    <!-- /.Shopping Cart table -->
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+
+{block scripts}
+<link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+<link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+{/block}
+{/block}

@@ -1,0 +1,13 @@
+{block content}
+<div id="reservation"class="container">
+    <div class="row d-flex justify-content-center" style="padding-top: 100px;">
+        <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase; padding-bottom:50px;">Filter from all hotels</h1>
+    </div>
+    {control hotelGrid}
+</div>
+
+    {block scripts}
+    <link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+    <link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+    {/block}
+{/block}

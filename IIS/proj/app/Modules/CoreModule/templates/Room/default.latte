@@ -1,0 +1,60 @@
+{block content}
+
+<div class="container" style="padding-top:50px; padding-bottom:50px;">
+    <div class="row d-flex justify-content-center" style="padding-top: 100px;">
+        <h1 style="font-size: 20px; letter-spacing: 0.2em; text-transform: uppercase; padding-bottom:20px;">Filter from all rooms</h1>
+    </div>
+    <div id="reservation" class="container">
+    {control roomGrid}
+    </div>
+</div>
+
+<div class="row d-flex justify-content-center" style="padding-top: 100px;">
+    <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">hotel {$hotel->name}</h1>
+</div>
+
+    <div class="d-flex flex-column bd-highlight" align="center" style="padding-top: 50px;"> 
+    
+        {foreach $room_types as $type}
+        <div style="padding-top:50px;">
+        <div class="p-0 bd-highlight" style="padding-top:50px;">
+            
+            
+            <!-- Card -->
+        <div class="card booking-card" style="width: 25em;" >
+            
+                <div class="view overlay zoom">
+
+                    <div class="view overlay zoom">
+                        
+                            <img class="card-img-top" src="../../www/img/rooms/{$type->image}" alt="Room picture">
+                       
+                            <div class="mask flex-center"></div>
+                    </div>
+                </div>
+
+                <div class="card-body text-left">
+                    <ul class="list-unstyled list-inline rating mb-0">
+                        
+                        <li class="list-inline-item"><p class="text-muted">{$type->price}€/night</p></li>
+                    </ul>
+                    <h5 class="card-title d-flex">{$type->type}</h5>
+                    <p class="card-text">{$type->facility}.</p>
+                    <a n:href="Reservation: $hotel->id, $type->type" class="btn btn-outline-success">Book room</a>
+                </div>
+        </div>
+    </div>
+        {/foreach}
+    </div>
+
+
+    <div style="padding-top:50px; padding-bottom:50px;"></div>
+
+
+{block scripts}
+<link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+<link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+{/block}
+
+
+{/block}

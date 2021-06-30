@@ -1,0 +1,44 @@
+{block content}
+	 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top scrolling-navbar" role="navigation";> 
+		<div class="collapse navbar-collapse tex" id="navbarToggler">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-2">
+				<li class="nav-item active">
+					<a id="active" class="nav-link"  n:href="Homepage:"  aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-fw fa-home"></i> Home
+					</a>  
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" n:href="Contact:"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" n:href="Hotel:"><i class="fa fa-bed" aria-hidden="true"></i> Hotels</a>
+				</li>
+				{if $user->isLoggedIn()}	
+					<li class="nav-item">
+						<a class="nav-link" n:href="Dashboard:"><i class="fas fa-columns"></i> Bookings</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" n:href="Profile:"><i class="fa fa-user" aria-hidden="true"></i> {$user->getId()}</a>
+					</li>
+				{/if}
+			</ul>
+			
+
+			{if $user->isLoggedIn()}
+				<a n:href="Sign:out"> <button type="submit" class="btn btn-danger navbar-btn login-btn" >Sign Out</button></a>
+			{else}
+				<a n:href="Sign:in"> <button type="submit" class="btn btn-danger navbar-btn login-btn">Sign In</button></a>
+                <a n:href="Sign:up" class="text-light"><button type="submit" class="btn btn-danger navbar-btn login-btn" >Sign up</button></a>
+			{/if}
+		</div> 
+	</nav>
+
+  
+  
+
+	{block scripts}
+		<link href="{$basePath}/css/nav.css" rel="stylesheet" type="text/css"/>
+
+	{/block}
+{/block}

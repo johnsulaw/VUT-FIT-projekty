@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0070)https://www.fit.vutbr.cz/study/courses/IIS/private/projekt/doc.html.cs -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+    
+    <title>Projekt IIS</title>
+    <style type="text/css">
+    	table { border-collapse: collapse; }
+    	td, th { border: 1px solid black; padding: 0.3em 0.5em; text-align: left; }
+    	dt { font-weight: bold; margin-top: 0.5em; }
+    </style>
+<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+<body>
+<!-- Zkontrolujte pros?m nastaven? k?dov?n? v hlavi?ce dokumentu
+     podle pou?it?ho editoru -->
+
+<h1>2. Hotel: rezervace a správa ubytování</h1>
+
+<dl>
+	<dt>Autori</dt>
+	<dd>Mário Gaži
+		<a href="mailto:xgazom00@stud.fit.vutbr.cz">xgazom00@stud.fit.vutbr.cz</a> -
+		Rezervácie, vizualizácie hotelov a izieb, DB
+	</dd>
+	<dd>Matej Otčenáš
+		<a href="mailto:xotcen01@stud.fit.vutbr.cz">xotcen01@stud.fit.vutbr.cz</a> -
+		Front-end, vyhľadavanie
+	</dd>
+	<dd>Jan Šulavík
+		<a href="mailto:xsulav01@stud.fit.vutbr.cz">xsulav01@stud.fit.vutbr.cz</a> -
+		Logging, registrácie, dashboardy
+	</dd>
+	<dt>URL aplikace</dt>
+	<dd><a href="http://www.stud.fit.vutbr.cz/~xautor01/IIS">odkaz na aplikaciu</a></dd>
+</dl>
+
+<h2>Užívateľ systému pre testovanie</h2>
+<p>Uvedte prosím existujúcich zástupcov <strong>všetkých rolí užívateľov</strong>.</p>
+<table>
+	<tbody><tr><th>Login</th><th>Heslo</th><th>Role</th></tr>
+	<tr><td>admin</td><td>admin</td><td>Administrátor</td></tr>
+	<tr><td>owner</td><td>owner</td><td>Vlastník</td></tr>
+	<tr><td>reception1</td><td>abcd</td><td>Recepčný Magnolie</td></tr>
+	<tr><td>reception2</td><td>efgh</td><td>Recepčný Chemes</td></tr>
+	<tr><td>reception3</td><td>ijkl</td><td>Recepčný Donly</td></tr>
+	</tbody></table>
+
+<p>(Diagram případu užití není nutno vkládat, pokud IS implementuje role a pžípady užití definované zadáním.)</p>
+<img style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;" src="USE_CASE.jpg" alt="USE_CASE">
+
+<h2>Implementace</h2>
+<p>Projekt je implementovaný prevažne v jakzyku PHP v 7.4, za použitia frameworku Nette 3. Jednotlive moduly sa nachadzaju v priecinku /app. Taktiež sme použili javascript, css, sql.</p>
+
+<h3>Databáza</h3>
+<img style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;" src="ER.jpg" alt="ER">
+
+<h2>Instalace</h2>
+
+<ul>
+	<li>Na serveri rozbalíme archív s aplikáciou</li>
+	<li>V koreňovom adresári spustíme "composer update", tak sa nainštalujú závislosti</li>
+	<li>V súbore /app/config/local.neon zadáme adresu databázového serveru</li>
+	<li>Na zvolenej databáze spustíme databázový skript /database/db_init.sql</li>
+</ul>
+
+<h2>Známé problémy</h2>
+<p></p>
+
+</body></html>

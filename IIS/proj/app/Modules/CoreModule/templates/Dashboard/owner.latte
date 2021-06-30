@@ -1,0 +1,96 @@
+{block content}
+
+
+
+<div id="reservation" class="container my-5 py-3 z-depth-1 rounded"  style="padding-top: 100px;">
+
+    <div class="row d-flex justify-content-center" style="padding-bottom: 50px;">
+        <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">Hotels overview</h1>
+        </div>
+  <!--Section: Content-->
+  <section class="dark-grey-text">
+
+    <!-- Shopping Cart table -->
+    <div class="table-responsive">
+
+      <table class="table product-table mb-0">
+
+        <!-- Table head -->
+        <thead class="mdb-color lighten-5">
+          <tr>
+            <th></th>
+            <th class="font-weight-bold">
+              <strong>Hotel ID</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>Hotel name</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+              <strong>Edit hotel</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+              <strong>Delete hotel</strong>
+            </th>
+            
+          </tr>
+        </thead>
+        <!-- /.Table head -->
+
+        <!-- Table body -->
+        <tbody>
+            
+            {foreach $hotels as $hotel}
+            
+          <!-- First row -->
+          <tr>
+            <th scope="row"> 
+            </th>
+
+            <td class="font-weight-bold">
+                {$hotel->id}
+            </td>
+
+            <td class="font-weight-bold">
+                {$hotel->name}
+            </td>
+
+            <td class="font-weight-bold">
+                <a n:href="Edit:edithotel $hotel->id"><button type="button" class="btn btn-sm btn-warning font-weight-bold" data-toggle="tooltip" data-placement="top" title="Edit hotel">O</button></a>
+            </td>
+
+            <td class="font-weight-bold">
+                <a n:href="removeHotel! $hotel->id"><button type="button" class="btn btn-sm btn-danger font-weight-bold" data-toggle="tooltip" data-placement="top" title="Delete hotel">X</button></a>
+            </td>
+
+
+          </tr>
+          <!-- /.First row -->
+
+          {/foreach}
+
+        </tbody>
+        <!-- /.Table body -->
+
+      </table>
+     
+      <a class="btn btn-success" n:href="Edit:addhotel" role="button">Add hotel</a>
+    </div>
+    <!-- /.Shopping Cart table -->
+
+    
+    
+  </section>
+  <!--Section: Content-->
+
+
+
+
+</div>
+
+{block scripts}
+<link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+<link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+{/block}
+{/block}

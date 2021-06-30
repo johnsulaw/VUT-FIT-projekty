@@ -1,0 +1,16 @@
+{block content}
+
+{var $role = $user->getIdentity()->getRoles()[0]}
+    {if $role == 1}
+        {include 'admin.latte'}
+    {/if}
+    {if $role <= 2}
+        {include 'owner.latte'}
+    {/if}
+    {if $role <= 3}
+        {include 'receptionist.latte'}
+    {/if}
+    {if $role <= 4}
+        {include 'guest.latte'}
+    {/if}
+{/block}

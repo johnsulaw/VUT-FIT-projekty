@@ -1,0 +1,225 @@
+{block content}
+
+
+
+<div id="reservation"class="container my-5 py-3 z-depth-1 rounded"  style="padding-top: 100px;">
+
+    <div class="row d-flex justify-content-center" style="padding-bottom: 50px;">
+        <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">Edit hotel</h1>
+    </div>
+        
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+
+    <!--Grid column-->
+    <div class="col-md-6">
+        <div class="text-center">
+            
+            {control editHotelForm}
+        </div>
+        
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+</section>
+<!--Section: Content-->
+
+
+</div>
+
+<div id="reservation"class="container my-5 py-3 z-depth-1 rounded"  style="padding-top: 100px;">
+
+    <div class="row d-flex justify-content-center" style="padding-bottom: 50px;">
+        <h1 style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">Hotel rooms</h1>
+    </div>
+    
+      <!--Section: Content-->
+      <section class="dark-grey-text">
+    
+        <!-- Shopping Cart table -->
+        <div class="table-responsive">
+    
+          <table class="table product-table mb-0">
+    
+            <!-- Table head -->
+            <thead class="mdb-color lighten-5">
+              <tr>
+                <th></th>
+                <th class="font-weight-bold">
+                  <strong>Room type</strong>
+                </th>
+                <th class="font-weight-bold">
+                  <strong>Room number</strong>
+                </th>
+
+                <th class="font-weight-bold">
+                    <strong>Delete room</strong>
+                </th>
+                
+              </tr>
+            </thead>
+            <!-- /.Table head -->
+    
+            <!-- Table body -->
+            <tbody>
+                
+                {foreach $rooms as $room}
+                
+              <!-- First row -->
+              <tr>
+                <th scope="row"> 
+                </th>
+    
+                <td class="font-weight-bold">
+                    {$room->type}
+                </td>
+    
+                <td class="font-weight-bold">
+                    {$room->floor_room}
+                </td>
+
+                {if ($rooms|length) > 1}
+                    <td class="font-weight-bold">
+                        <a n:href="removeRoom! $room->hotel_id, $room->floor_room"><button type="button" class="btn btn-sm btn-danger font-weight-bold" data-toggle="tooltip" data-placement="top" title="Delete room">X</button></a>
+                    </td>
+                {else}
+                    <td></td>
+                {/if}
+    
+              </tr>
+              <!-- /.First row -->
+    
+              {/foreach}
+    
+            </tbody>
+            <!-- /.Table body -->
+    
+          </table>
+         
+          <a class="btn btn-success" n:href="Edit:addroom $room->hotel_id" role="button">Add room</a>
+        </div>
+        <!-- /.Shopping Cart table -->
+    
+        
+        
+      </section>
+      <!--Section: Content-->
+    
+    
+    
+    
+    </div>
+
+
+
+    <div id="reservation" class="container my-5 py-3 z-depth-1 rounded"  style="padding-top: 100px;">
+
+        <div class="row d-flex justify-content-center" style="padding-bottom: 50px;">
+            <h1  style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">Hotel room types</h1>
+            </div>
+        
+        
+          <!--Section: Content-->
+          <section class="dark-grey-text">
+        
+            <!-- Shopping Cart table -->
+            <div class="table-responsive">
+        
+              <table class="table product-table mb-0">
+        
+                <!-- Table head -->
+                <thead class="mdb-color lighten-5">
+                  <tr>
+                    <th></th>
+                    <th class="font-weight-bold">
+                      <strong>Type</strong>
+                    </th>
+                    <th class="font-weight-bold">
+                      <strong>Price</strong>
+                    </th>
+                    
+                    <th class="font-weight-bold">
+                      <strong>Beds</strong>
+                    </th>
+                    
+                    <th class="font-weight-bold">
+                      <strong>Facility</strong>
+                    </th>
+
+                    <th class="font-weight-bold">
+                        <strong>Edit room type</strong>
+                    </th>
+
+                    <th class="font-weight-bold">
+                        <strong>Delete room type</strong>
+                    </th>
+                    
+                  </tr>
+                </thead>
+                <!-- /.Table head -->
+        
+                <!-- Table body -->
+                <tbody>
+                    
+                    {foreach $room_details as $room_detail}
+                    
+                  <!-- First row -->
+                  <tr>
+                    <th scope="row"> 
+                    </th>
+        
+                    <td class="font-weight-bold">
+                        {$room_detail->type}
+                    </td>
+        
+                    <td class="font-weight-bold">
+                        {$room_detail->price}
+                    </td>
+
+                    <td class="font-weight-bold">
+                        {$room_detail->beds}
+                    </td>
+
+                    <td class="font-weight-bold">
+                        {$room_detail->facility}
+                    </td>
+        
+                    <td class="font-weight-bold">
+                        <a n:href="Edit:editroom $room_detail->hotel_id, $room_detail->type"><button type="button" class="btn btn-sm btn-warning font-weight-bold" data-toggle="tooltip" data-placement="top" title="Edit room type">O</button></a>
+                    </td>
+        
+                    <td class="font-weight-bold">
+                        <a n:href="removeroomtype! $room_detail->hotel_id, $room_detail->type"><button type="button" class="btn btn-sm btn-danger font-weight-bold" data-toggle="tooltip" data-placement="top" title="Delete room type">X</button></a>
+                    </td>
+        
+        
+                  </tr>
+                  <!-- /.First row -->
+        
+                  {/foreach}
+        
+                </tbody>
+                <!-- /.Table body -->
+        
+              </table>
+             
+            </div>
+            <!-- /.Shopping Cart table -->
+        
+            
+            
+          </section>
+          <!--Section: Content-->
+        
+        
+        
+        
+        </div>
+
+
+        {block scripts}
+        <link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+        <link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+        {/block}

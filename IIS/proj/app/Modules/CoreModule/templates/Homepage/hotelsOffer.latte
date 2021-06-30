@@ -1,0 +1,146 @@
+{block content}
+
+
+<div class="container mt-5" style="padding-bottom: 50px;">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+  
+      <!-- Section heading -->
+      <h2 class="text-center font-weight-bold mb-4 pb-2">Learn about us</h2>
+      <!-- Section description -->
+      <p class="text-center mx-auto w-responsive mb-5">At the first sight, GiveMeRoom is a regular hotel room-provider which is actually true. You can find any kind of room in here at any place you wish to stay. Although, did you ever have a problem that you got sick and was not able to accomodate and you also lost your money? GiveMeRoom will never do this. We provide you with a full refund within one hour before your stay. Yes, it is that simple. So go on and get your room now!</p>
+  
+      <!-- Grid row -->
+      <div class="row align-items-center" style="padding-top: 100px;">
+  
+        <!-- Grid column -->
+        <div class="col-lg-5">
+  
+          <!-- Featured image -->
+          <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+            <img class="img-fluid" src="{$basePath}/img/hotels/hotel1.jpg" alt="Sample image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-7">
+  
+          <!-- Category -->
+          <a class="red-text">
+            <h6 class="font-weight-bold mb-3"><i class="fa fa-bed" aria-hidden="true"></i> Hotels</h6>
+          </a>
+          <!-- Post title -->
+          <h4 class="font-weight-bold mb-3"><strong>Find your perfect hotel</strong></h4>
+          <!-- Excerpt -->
+          <p>We provide the best offers for our customers. You can list from thousands of hotels and pick your room the way you like it and if something goes wrong you always get your money back!</p>
+          <!-- Read more button -->
+          <a n:href="Hotel:" class="btn btn-success btn-md btn-rounded mx-0">List hotels</a>
+  
+        </div>
+        <!-- Grid column -->
+
+
+         <!-- Grid column -->
+         <div class="col-lg-5" style="padding-top:100px">
+  
+            <!-- Featured image -->
+            <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+              <img class="img-fluid" src="{$basePath}/img/contact.jpg" alt="image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-lg-7" style="padding-top:100px">
+    
+            <!-- Category -->
+            <a class="green-text" style="padding-top:100px">
+              <h6 class="font-weight-bold mb-3"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</h6>
+            </a>
+            <!-- Post title -->
+            <h4 class="font-weight-bold mb-3"><strong>Something went wrong?</strong></h4>
+            <!-- Excerpt -->
+            <p>Did something go wrong and you did not like it? Do not hesitate and contact us. We will do everything to help you.</p>
+            <!-- Read more button -->
+            <a n:href="Contact:" class="btn btn-success btn-md btn-rounded mx-0">Contact us</a>
+    
+          </div>
+          <!-- Grid column -->
+
+        
+  
+      </div>
+      <!-- Grid row -->
+      
+    </section>
+    <!--Section: Content-->
+  
+  
+  </div>
+    <!-- <div class="row d-flex justify-content-center" style="padding-top: 100px;">
+        <h1 style="font-size: 50px; letter-spacing: 0.2em; text-transform: uppercase;">Hotels</h1>
+    </div>
+        <div class="row d-flex justify-content-around" style="padding-top: 300px; padding-bottom: 300px;">
+
+        {foreach $hotels as $hotel}
+
+
+
+
+        
+                <div class="col-sm-2" style="padding-left: 20px; padding-right: 20px;">
+                    <div class="card" style="width: 18em; height: 27em">
+                        <div class="view overlay zoom">
+                            {if ($hotel->image)}
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img alt="Card image cap" class="card-img-top embed-responsive-item" src="{$basePath}/img/hotels/{$hotel->image}"  />
+                            </div>
+                            {/if}
+                            <div class="mask flex-center">
+                                <p class="white-text" style="font-size: 25px;">
+                                    {for $i = 0; $i < $hotel->stars; $i++}
+                                        {if $hotel->stars > $i}
+                                            <span class="fa fa-star" style="color:orange"></span>
+                                        {else}
+                                            <span class="fa fa-star"></span>
+                                        {/if}
+
+                                    {/for}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title d-flex">{$hotel->name}</h5>
+                            <p class="card-text">{$hotel->description}.</p>
+                            <a n:href="Room: $hotel->id" class="btn btn-primary">Visit hotel</a>
+                        </div>
+                    </div>
+                </div>
+        {/foreach}
+    </div> -->
+
+    
+
+
+<script>
+
+
+
+</script>
+
+<style>
+
+</style>
+
+{/block}

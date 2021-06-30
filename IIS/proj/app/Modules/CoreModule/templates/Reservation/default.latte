@@ -1,0 +1,133 @@
+{block content}
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center" style="padding-top: 100px;">
+            <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">hotel {$hotel->name} : {$room->type} room</h1>
+    </div>
+
+    {var $i = 0}
+
+    <div id="reservation" class="container my-5 px-5 pt-5 pb-4 z-depth-1">
+        <div id="hidden" class="invisible text-center">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <p id="availability"></p>
+            </div>
+        </div>
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+      
+          <div class="row align-items-center">
+      
+            <div class="col-lg-6 mb-4">
+              <h2 class="font-weight-normal mb-4">{$room->type} room in {$hotel->city}</h2>
+                <ul class="list-unstyled">
+                    <li class="text-muted">Facilities
+                         <ul>
+                             <li>{$room->facility}</li>
+                         </ul>
+                 
+                    </li>
+                 
+                    <li>Number of beds</li>
+                        <ul>
+                            <li>{$room->beds}</li>
+                        </ul>
+                 
+                    <li>Price for night
+                        <ul>
+                            <li>{$room->price}€</li>
+                        </ul>
+                    </li>
+                 </ul>
+                 <h4>Pick your date</h4>
+                 <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control input-lg" name="daterange"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                  </div>
+            </div>
+      
+            <div class="col-lg-6 mb-4">
+      
+              <div id="mdb-lightbox-ui"></div>
+      
+              <div class="d-grid mdb-lightbox">
+                  {foreach $images as $img}
+                    {breakIf $i == 4}
+                        <figure class="item">
+                            <img src="{$basePath}/img/galleries/{$gallery}/{$img}" class="rounded" alt="room"/>
+                        </a>
+                        </figure>
+                    {do $i++}
+
+                {/foreach}
+              </div>
+      
+            </div>
+      
+          </div>
+
+            <button type="button" class="btn btn-flat deep-purple-text " data-toggle="modal" data-target="#{$hotel->gallery}">View full gallery</button>
+            <div class="modal fade" id="{$hotel->gallery}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    {foreach $images as $img}
+                        <img class="card-img-top" src="{$basePath}/img/galleries/{$gallery}/{$img}" alt="room" style="padding:50px;">
+                    {/foreach}
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+        <!-- Button -->
+    </div>
+      
+        </section>
+        <!--Section: Content-->
+        
+      
+      </div>
+
+
+
+</div>
+
+
+
+    {block scripts}
+    <script>
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left',
+                maxDate: {$dateMax},
+                minDate: {$dateMin}
+            }, function(start, end) {
+                let link = {link changeDate!, start => 'START', end => 'END'}.replace('START', start.format('YYYY-MM-DD'));
+                link = link.replace('END',end.format('YYYY-MM-DD'));
+                $.nette.ajax({
+                    url: link,
+                }).done(function(msg) {
+                    if (typeof (msg) === "string"){
+                        if (document.getElementById("hidden").classList.contains('invisible')){
+                            document.getElementById("hidden").classList.toggle('invisible');
+                            document.getElementById("hidden").classList.add('visible');
+                            $('#availability').text(msg);
+                        }
+                        
+                        $('#availability').text(msg);
+                    }
+                });
+            })});
+    </script>
+
+    <script>
+        function changeVisible() {
+            document.getElementById("hidden").classList.toggle('visible');
+            document.getElementById("hidden").classList.add('invisible');
+        } 
+    </script>
+
+    <link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+    <link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+    {/block}
+{/block}

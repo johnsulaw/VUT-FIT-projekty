@@ -1,0 +1,128 @@
+{block content}
+
+<div>
+    <table id="user_reservations_table">
+        <thead>
+            <tr id="users_table_firstrow">
+ 
+            </tr>
+        </thead>
+      
+    </table>
+</div>
+
+
+
+<div id="reservation" class="container my-5 py-3 z-depth-1 rounded"  style="padding-top: 100px;">
+
+    <div class="row d-flex justify-content-center" style="padding-bottom: 50px;">
+        <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">Registered users</h1>
+        </div>
+
+
+  <!--Section: Content-->
+  <section class="dark-grey-text">
+
+    <!-- Shopping Cart table -->
+    <div class="table-responsive">
+
+      <table class="table product-table mb-0">
+
+        <!-- Table head -->
+        <thead class="mdb-color lighten-5">
+          <tr>
+            <th></th>
+            <th class="font-weight-bold">
+              <strong>E-mail address</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>Role</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+              <strong>Change role</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+              <strong>Delete user</strong>
+            </th>
+
+            <th class="font-weight-bold">
+                <strong>Change workstation</strong>
+            </th>
+
+            <th class="font-weight-bold">
+                <strong>Works at hotel ID</strong>
+            </th>
+            
+          </tr>
+        </thead>
+        <!-- /.Table head -->
+
+        <!-- Table body -->
+        <tbody>
+
+            {foreach $users as $usr}
+            
+          <!-- First row -->
+          <tr>
+          
+            <th scope="row">
+               
+            </th>
+
+            <td class="font-weight-bold">
+                {$usr->guest_mail}
+            </td>
+
+            <td class="font-weight-bold">
+                {$usr->role}
+            </td>
+
+            <td class="font-weight-bold">
+                <a n:href="Edit:role $usr->guest_mail"><button type="button" class="btn btn-sm btn-warning font-weight-bold" data-toggle="tooltip" data-placement="top" title="Change role">O</button></a>
+            </td>
+
+            
+            
+            <td class="font-weight-bold">
+                <a n:href="removeUser! $usr->guest_mail"><button type="button" class="btn btn-sm btn-danger font-weight-bold" data-toggle="tooltip" data-placement="top" title="Delete user">X</button></a>
+            </td>
+
+            {if $usr->role == 3}
+            <td class="font-weight-bold">
+                <a n:href="Edit:workstation $usr->guest_mail"><button type="button" class="btn btn-sm btn-secondary font-weight-bold" data-toggle="tooltip" data-placement="top" title="Change workstation">/</button></a>
+            </td>
+            <td class="font-weight-bold">{$presenter->getHotelId($usr->guest_mail)}</td>
+            {else}
+            <td class="font-weight-bold"></td>
+            <td class="font-weight-bold"></td>
+            {/if}
+
+          </tr>
+          <!-- /.First row -->
+
+          {/foreach}
+
+        </tbody>
+        <!-- /.Table body -->
+
+      </table>
+     
+      <a class="btn btn-success" n:href="Sign:Up" role="button">Add user</a>
+    </div>
+    <!-- /.Shopping Cart table -->
+
+    
+    
+  </section>
+  <!--Section: Content-->
+
+
+  {block scripts}
+  <link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+  <link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+  {/block}
+
+</div>
+{/block}

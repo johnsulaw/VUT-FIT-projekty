@@ -1,0 +1,28 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\Modules\CoreModule\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+	autoStart: true
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+latte:
+	macros:
+		- Nextras\FormsRendering\LatteMacros\Bs3InputMacros::install
+
+
+services:
+    - MyAuthenticator
+    - AdminModel
+    router: App\Router\RouterFactory::createRouter

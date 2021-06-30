@@ -1,0 +1,18 @@
+.big-banner{
+    background-image: url('../img/rooms/room1.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }

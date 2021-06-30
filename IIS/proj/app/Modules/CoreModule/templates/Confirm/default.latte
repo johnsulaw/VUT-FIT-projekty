@@ -1,0 +1,43 @@
+{block content}
+
+    <div id="reservation" class="container my-5 py-5 z-depth-1" style="padding-bottom:20px">
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            
+        <h2 class="font-weight-normal mb-4 text-center">Reservation details</h2>
+
+        <ul class="list-group text-strong">
+            <li class="list-group-item ">{$hotel->name}, {$hotel->city} {$hotel->street}</li>
+            <li class="list-group-item ">Room number: {$room}</li>
+            <li class="list-group-item text-success">Reservation start: {$start}</li>
+            <li class="list-group-item text-danger">Reservation end: {$end}</li>
+            <li class="list-group-item">Total price: {$price} €</li>
+        </ul>
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-6">
+            <div class="text-center">
+                <p class="h4 mb-4">Order confirmation</p>
+                {control confirmForm}
+            </div>
+            
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+{block scripts}
+<link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+<link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+{/block}
+
+{/block}

@@ -1,0 +1,149 @@
+{block content}
+
+
+<div id="reservation" class="container my-5 py-3 z-depth-1 rounded"  style="padding-top: 100px;">
+
+    <div class="row d-flex justify-content-center" style="padding-bottom: 50px;">
+        <h1 n:block="title" style="font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase;">Reservations</h1>
+        </div>
+  <!--Section: Content-->
+  <section class="dark-grey-text">
+
+    <!-- Shopping Cart table -->
+    <div class="table-responsive">
+
+      <table class="table product-table mb-0">
+
+        <!-- Table head -->
+        <thead class="mdb-color lighten-5">
+          <tr>
+            <th></th>
+            <th class="font-weight-bold">
+              <strong>Reservation</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>From</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+              <strong>To</strong>
+            </th>
+            
+            <th class="font-weight-bold">
+              <strong>Hotel name</strong>
+            </th>
+
+            <th class="font-weight-bold">
+                <strong>Room number</strong>
+            </th>
+            <th class="font-weight-bold">
+                <strong>Customer</strong>
+            </th>
+            <th class="font-weight-bold">
+                <strong>Price</strong>
+            </th>
+            <th class="font-weight-bold">
+                <strong>Paid</strong>
+            </th>
+            <th class="font-weight-bold">
+                <strong>Confirm reservation</strong>
+            </th>
+            <th class="font-weight-bold">
+                <strong>Cancel reservation</strong>
+            </th>
+            
+          </tr>
+        </thead>
+        <!-- /.Table head -->
+
+        <!-- Table body -->
+        <tbody>
+            
+            {foreach $reservations as $reservation}
+            
+          <!-- First row -->
+          <tr>
+            <th scope="row"> 
+            </th>
+
+            <td class="font-weight-bold">
+                {$reservation->id}
+            </td>
+
+            <td class="font-weight-bold">
+                {$reservation->from_date}
+            </td>
+
+
+            <td class="font-weight-bold">
+                {$reservation->to_date}
+            </td>
+
+
+            <td class="font-weight-bold">
+                {$hotel_name = $presenter->getHotelName($reservation->hotel_id)}
+            </td>
+            
+            <td class="font-weight-bold">
+                {$reservation->room_id}
+            </td>
+
+            <td class="font-weight-bold">
+                {$reservation->guest_mail}
+            </td>
+
+            <td class="font-weight-bold">
+                {$reservation->price}
+            </td>
+
+            <td class="font-weight-bold">
+                {if $reservation->payed_off == 1}
+                    Yes
+                {else}
+                    No
+                {/if}
+            </td>
+
+           
+
+            {if $reservation->payed_off != 1}
+            <td class="font-weight-bold">
+                <a n:href="confirmReservation! $reservation->id"><button type="button" class="btn btn-sm btn-success font-weight-bold" data-toggle="tooltip" data-placement="top" title="Confirm reservation">&#10004;</button></a>
+            </td>
+            
+            {else}
+            <td class="font-weight-bold"></td>
+            {/if}
+
+            <td class="font-weight-bold">
+                <a n:href="deleteReservation! $reservation->id"><button type="button" class="btn btn-sm btn-danger font-weight-bold" data-toggle="tooltip" data-placement="top" title="Cancel reservation">X</button></a>
+            </td>
+
+
+          </tr>
+          <!-- /.First row -->
+
+          {/foreach}
+
+        </tbody>
+        <!-- /.Table body -->
+
+      </table>
+    </div>
+    <!-- /.Shopping Cart table -->
+
+    
+    
+  </section>
+  <!--Section: Content-->
+
+
+
+
+</div>
+
+{block scripts}
+<link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+<link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+{/block}
+{/block}

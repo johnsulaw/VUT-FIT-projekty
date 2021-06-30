@@ -1,0 +1,77 @@
+{block content}
+
+
+<div class="d-flex justify-content-center container my-5">
+
+<div class="d-flex justify-content-center">
+  <!--Section: Content-->
+  <section class="text-center dark-grey-text ">
+
+    <!-- Section heading -->
+    <h3 style="font-size: 30px; letter-spacing: 0.2em; text-transform: uppercase; padding-bottom: 20px;">My profile</h3>
+    <!-- Section description -->
+   
+		<!-- Grid row -->
+    <div class="row  d-flex justify-content-center">
+
+      <!-- Grid column -->
+      <div class="col">
+
+        <!-- Rotating card -->
+        <div class="card-wrapper">
+          <div id="card-1" class="card card-rotating text-center">
+            <!-- Front Side -->
+            <div class="face front">
+              
+              <!-- Avatar -->
+              <div class="avatar mx-auto white" style="padding-top: 20px;">
+                <img src="{$basePath}/img/profile.png" class="rounded-circle img-fluid" alt="First sample avatar image" width="100" height="200">
+              </div>
+              <!-- Content -->
+              <div class="card-body">
+                <h4 class="font-weight-bold mt-1 mb-3">{$firstname} {$lastname}</h4>
+
+                <!-- Triggering button -->
+                <p><a n:href="Profile:edit">Edit profile</a> <i class="fas fa-user-edit"></i></p>
+              </div>
+            </div>
+            <!-- Front Side -->
+            <!-- Back Side -->
+            <div class="face back">
+              <!-- Content -->
+              <div class="card-body">
+                <!-- Content -->
+                <h4 class="font-weight-bold mt-4 mb-2">
+                  <strong>Personal data</strong>
+                </h4>
+                <hr>
+                <ul class="list-group text-left">
+                    <li class="list-group-item">Birthday: {$birthdate}</li>
+                    <li class="list-group-item">City: {$city}</li>
+                    <li class="list-group-item">Street: {$street}</li>
+                  </ul>
+               
+              </div>
+            </div>
+            <!-- Back Side -->
+          </div>
+        </div>
+        <!-- Rotating card -->
+
+      </div>
+      <!-- Grid column -->
+
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  </div>
+  <!--Section: Content-->
+
+</div>
+
+{block scripts}
+  <link href="{$basePath}/css/hotels.css" rel="stylesheet" type="text/css"/>
+  <link href="{$basePath}/css/reservation2.css" rel="stylesheet" type="text/css"/>
+  {/block}

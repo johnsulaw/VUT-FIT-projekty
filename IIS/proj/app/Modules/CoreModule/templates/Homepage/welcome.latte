@@ -1,0 +1,75 @@
+
+{block content}
+<!-- Full Page Intro -->
+   <div class="big-banner">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-white-dark d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-12 ">
+              <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown text-center" data-wow-delay="0.3s">Welcome To GiveMeRoom!</h1>
+              <p class="lead white-text font-weight-bold text-center"><strong>World's best hotel room provider website.</strong></p>
+                
+              <div class="row align-items-center">
+                <div class="col">    
+                    <div class="row d-flex justify-content-around">
+                        <div class="md-form active-pink active-pink-2 col-md-6" style="padding-top: 150px;">
+                            <div class="form-group d-md-flex"> 
+                                <div class="bs-example">                             
+                                        <div class="d-flex justify-content-around">
+                                            {control searchForm}
+                                        </div>       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+                
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+
+
+
+{block scripts}
+    <script type="text/javascript" src="{$basePath}/js/typehead.js"></script>
+    <script>
+
+            $(document).ready(function(){
+                var city = {$cities}
+                // Constructing the suggestion engine
+                var city = new Bloodhound({
+                    datumTokenizer: Bloodhound.tokenizers.whitespace,
+                    queryTokenizer: Bloodhound.tokenizers.whitespace,
+                    local: city
+                });
+
+                // Initializing the typeahead
+                $('.typeahead').typeahead({
+                        hint: true,
+                        highlight: true, /* Enable substring highlighting */
+                        minLength: 1 /* Specify minimum characters required for showing result */
+                    },
+                    {
+                        name: 'city',
+                        source: city
+                    });
+            });
+    </script>
+    <script>new WOW().init();</script>
+    <link href="{$basePath}/css/autosug.css" rel="stylesheet" type="text/css"/>
+    <link href="{$basePath}/css/welcome.css" rel="stylesheet" type="text/css"/>
+{/block}
+
+{/block}
