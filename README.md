@@ -1,3 +1,3 @@
 # VUT-FIT-projects
 
-Some of the school projects I worked on while attending BUT FIT.
+Některé ze školních projektu, na kterých jsem pracoval během svého studia na FIT VUT v Brně
